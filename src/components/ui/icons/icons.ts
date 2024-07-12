@@ -309,7 +309,7 @@ export const Icons = {
       "h-4 w-4 flex-shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
     viewBox: "0 0 24 24",
     fill: "currentColor",
-    title: "GitHub",
+    title: "Instagram",
   },
   googleFooter: {
     paths: [
