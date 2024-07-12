@@ -30,7 +30,7 @@ const avatarSrcs: Array<string> = [
 ];
 ---
 
-<MainLayout title="Bodas en cartagena ché">
+<MainLayout title="Wedding In Cartagena.">
   <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"
@@ -38,13 +38,14 @@ const avatarSrcs: Array<string> = [
   />
 
   <HeroSection
-    title=`Botijas
-      <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>
+    title=`Organiza Tu Boda 
+      <span class="text-yellow-500 dark:text-yellow-400">Soñada</span>
     `
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Contactanos por whatsapp"
-    primaryBtnURL="https://wa.me/3013716843?text=Esto%20es%20un%20mensaje%20para%20un%20botijita%20as%20a%20service%20%27till%20dead"
-    secondaryBtn="Contacta con nosotros"
+    subTitle="Confía en Le Mariage como tu socio de confianza para bodas y eventos en Cartagena. Desde la honestidad y la confianza hasta el amor por los detalles, estamos aquí para convertir tus sueños en recuerdos inolvidables. Con pasión y dedicación, te guiaremos en cada paso del camino para crear momentos que atesorarás para siempre."
+    smallText= "¡Contáctanos hoy y comienza a planificar la celebración de tus sueños!"
+    primaryBtn="Contactanos Por Whatsapp"
+    primaryBtnURL="https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"
+    secondaryBtn="Envianos un mensaje"
     secondaryBtnURL="/contact"
     withReview={true}
     avatars={avatarSrcs}
@@ -54,6 +55,38 @@ const avatarSrcs: Array<string> = [
     src={heroImage}
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
+
+  <FeaturesNavs
+  title=`¡Bienvenidos a nuestra  <span class="text-yellow-500 dark:text-yellow-400">familia</span> en el mundo de los sueños hechos realidad! `
+  tabs={[
+    {
+      heading: "Cutting-Edge Tools",
+      content:
+        "En Le Mariage, nos enorgullece presentarnos como tu socio de confianza en la creación de momentos inolvidables en Cartagena y más allá.",
+      svg: "tools",
+      src: tools,
+      alt: "Yellow and black heavy equipment on brown grass field",
+      first: true,
+    },
+    {
+      heading: "Intuitive Dashboards",
+      content:
+        "En el corazón de nuestra empresa yace una pasión inquebrantable por la excelencia en la planificación de bodas y eventos.",
+      svg: "dashboard",
+      src: dashboard,
+      alt: "A screenshot or graphic representation of the intuitive dashboard",
+      second: true,
+    },
+    {
+      heading: "Robust Features",
+      content:
+        "Nos esforzamos por superar tus expectativas en cada paso del camino, llevando tus ideas desde la concepción hasta la realización con estilo y un toque personal incomparable.",
+      svg: "house",
+      src: construction,
+      alt: "Gray metal building frame near tower crane during daytime",
+    },
+  ]}
+/>
 
   <ClientsSection
     title="Trusted by Industry Leaders"
@@ -68,37 +101,6 @@ const avatarSrcs: Array<string> = [
     features={features}
   />
 
-  <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
-    tabs={[
-      {
-        heading: "Cutting-Edge Tools",
-        content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
-        first: true,
-      },
-      {
-        heading: "Intuitive Dashboards",
-        content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
-      },
-      {
-        heading: "Robust Features",
-        content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
-      },
-    ]}
-  />
 
   <TestimonialsSection
     title="Fast-Track Your Projects"
@@ -142,8 +144,8 @@ const avatarSrcs: Array<string> = [
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="Construyamos Juntos Tu Boda Soñada"
+    subTitle="En Le Mariage, no solo creamos eventos, creamos experiencias que perduran toda la vida. Confía en nosotros para hacer realidad tus sueños más preciados y transformar cada momento en un recuerdo que atesorarás para siempre."
+    url="https://www.instagram.com/lemariagectg_weddingplanner?igsh=MTFraHQzMmM4Z21vMg%3D%3D&utm_source=qr"
   />
 </MainLayout>
