@@ -1,12 +1,12 @@
 import ogImageSrc from "@images/social.png";
 
 export const SITE = {
-  title: "ScrewFast",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  title: "Weddingincartagena",
+  tagline: "Weddings and events",
+  description: "Planning your dream wedding in Cartagena? Look no further! At Le Mariage, we specialize in creating unforgettable weddings that reflect your unique style and vision. From intimate ceremonies to grand celebrations, our expert team is dedicated to ensuring every detail is perfect.",
+  description_short: "At Le Mariage, we provide top-notch tools and expert guidance to help you plan your dream event. Our comprehensive services are designed to meet all your event needs..",
+  url: "https://weddingincartagena.com/",
+  author: "Nicolas Morales",
 };
 
 export const SEO = {
@@ -33,7 +33,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: : Wedding In Cartagena`,
+  description: "At Le Mariage, we provide top-notch tools and expert guidance to help you plan your dream event. Our comprehensive services are designed to meet all your event needs.",
   image: ogImageSrc,
 };

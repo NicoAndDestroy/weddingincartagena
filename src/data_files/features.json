@@ -15,8 +15,18 @@
     "svg": "books"
   },
   {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
+    "heading": "Ambience",
+    "content": "Enjoy the tropical climate and beautiful beaches of Cartagena, which provide the perfect backdrop for your outdoor weddings and events, full of romance and elegance.",
+    "svg": "frame"
+  },
+  {
+    "heading": "Adventure",
+    "content": "Discover the excitement of exploring the natural and cultural wonders that Cartagena offers, from excursions to Caribbean islands to guided tours of the city's most emblematic places, there is always something new to discover.",
+    "svg": "frame"
+  },
+  {
+    "heading": "Nature",
+    "content": "Enjoy the lush natural beauty of Cartagena, from its crystal-clear beaches to its vibrant tropical landscapes, inviting you to celebrate in harmony with nature and create magical moments that last forever.",
     "svg": "frame"
   }
 ]
