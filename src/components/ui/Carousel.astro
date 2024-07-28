@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import featureImage from "../../images/features-image.avif";
+const alt = "ScrewFast products in floating boxes";
+
+---
+<!-- Slider main container -->
+<div id="wedding-slider" class="relative">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <Image src={featureImage} alt={alt} />
+    </div>
+    <div class="swiper-slide">
+      <Image src={featureImage} alt={alt} />
+    </div>
+    <div class="swiper-slide">
+      <Image src={featureImage} alt={alt} />
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<script>
+  // core version + navigation, pagination modules:
+  import Swiper from 'swiper';
+  import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+  // import Swiper and modules styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/autoplay'
+
+  const selector = document.getElementById('wedding-slider');
+
+  // init Swiper:
+  const swiper = new Swiper(selector, {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination, Autoplay],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {          // definir botones next y prev para el módulo Navigation
+      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+    }
+  });
+
+</script>

@@ -1,8 +1,10 @@
 ---
 // Import the necessary dependencies
-import { Image } from "astro:assets";
+
 import IconBlock from "@components/ui/blocks/IconBlock.astro";
 import Icon from "@components/ui/icons/Icon.astro";
+import BrandLogo from "@components/BrandLogo.astro";
+import Carousel from "@components/ui/Carousel.astro";
 
 interface Feature {
   heading: string;
@@ -23,23 +25,13 @@ const { title, subTitle, src, alt, features } = Astro.props;
 
 <section
   id="values"
-  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  class="mx-auto my-20 max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
 >
+  <header class="mb-20 flex items-center justify-center">
+    <BrandLogo class="h-auto w-40" />
+  </header>
   <!-- Block to display the feature image -->
-  <div class="relative mb-6 overflow-hidden md:mb-8">
-    {
-      src && alt && (
-        <Image
-          src={src}
-          alt={alt}
-          class="h-full w-full object-cover object-center"
-          draggable={"false"}
-          format={"avif"}
-          loading={"eager"}
-        />
-      )
-    }
-  </div>
+  <Carousel />
 
   <!-- Displaying the main content consisting of title, subtitle, and several `IconBlock` components -->
   <div class="mt-5 grid gap-8 lg:mt-16 lg:grid-cols-3 lg:gap-12">
