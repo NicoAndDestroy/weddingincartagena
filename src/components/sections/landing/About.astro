@@ -1,31 +1,40 @@
 ---
-// Define props from Astro
-const { title, subTitle } = Astro.props;
+import FeaturesNavs from "../features/FeaturesNavs.astro";
 
-// Define TypeScript interface for props
-interface Props {
-  title: string;
-  subTitle?: string;
-}
+import AbountOne from "@images/about/about_1.webp";
+import AbountTwo from "@images/about/about_2.webp";
+import AbountThree from "@images/about/about_3.webp";
 ---
-
-<section
-  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
->
-  <!-- Title and description -->
-  <div class="mx-auto mb-6 w-full space-y-1 text-center sm:w-1/2 lg:w-1/3">
-    <h2
-      class="text-balance text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 sm:text-3xl"
-    >
-      {title}
-    </h2>
-    {
-      subTitle && (
-        <p class="text-pretty leading-tight text-neutral-600 dark:text-neutral-400">
-          {subTitle}
-        </p>
-      )
-    }
-  </div>
-
+<section id="about" class="my-20">
+  <FeaturesNavs
+    title=`About Us`
+    subTitle=`Welcome to our <span class="text-yellow-500 dark:text-yellow-400">family</span> in the world of dreams come true!`
+    tabs={[
+      {
+        heading: "Cutting-Edge Tools",
+        content:
+          "En Le Mariage, nos enorgullece presentarnos como tu socio de confianza en la creación de momentos inolvidables en Cartagena y más allá.",
+        svg: "tools",
+        src: AbountOne,
+        alt: "Yellow and black heavy equipment on brown grass field",
+        first: true,
+      },
+      {
+        heading: "Intuitive Dashboards",
+        content:
+          "En el corazón de nuestra empresa yace una pasión inquebrantable por la excelencia en la planificación de bodas y eventos.",
+        svg: "dashboard",
+        src: AbountTwo,
+        alt: "A screenshot or graphic representation of the intuitive dashboard",
+      },
+      {
+        heading: "Robust Features",
+        content:
+          "Nos esforzamos por superar tus expectativas en cada paso del camino, llevando tus ideas desde la concepción hasta la realización con estilo y un toque personal incomparable.",
+        svg: "house",
+        src: AbountThree,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+    ]}
+  />
 </section>
