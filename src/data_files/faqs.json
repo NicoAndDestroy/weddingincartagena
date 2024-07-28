@@ -1,29 +1,33 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Ask us anything about our brand and services, and get a immediate response.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "What services do you offer as a wedding planner in Cartagena? ",
+      "answer": "I offer a full range of wedding planning services in Cartagena, including day-of coordination, full planning, design and decoration, vendor selection, budget management, and more. My goal is to ensure that your special day is perfect in every way."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "How do you work with couples to plan their wedding in Cartagena?",
+      "answer": " I work closely with each couple to understand their vision and preferences. We meet to discuss your ideas, themes, and specific wishes. From there, I create a detailed and personalized plan to make every aspect of your wedding exactly as you imagined, taking advantage of Cartagena's beauty and charm."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "How far in advance should I hire a wedding planner in Cartagena?",
+      "answer": " I recommend hiring a wedding planner as soon as you decide to get married. The more time we have to plan, the better we can organize all the details and ensure everything goes perfectly. However, I also offer day-of coordination services for weddings that are already in progress."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Do you work with a specific budget?",
+      "answer": "Yes, I work with the budget you have in mind. Part of my job is to help you maximize your budget and find creative solutions to achieve your dream wedding without exceeding your financial limits."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "What happens if I need to change the date of my wedding?",
+      "answer": "I understand that unforeseen circumstances can arise. I work with you to make the necessary adjustments and reorganize all aspects of the wedding for the new date, ensuring everything is handled as smoothly as possible."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "How can I contact you to discuss the details of my wedding in Cartagena?",
+      "answer": "You can contact me directly via WhatsApp by clicking the button below. I am available to answer your questions, discuss your ideas, and start planning your dream wedding."
+    },
+    {
+      "question": "Do you offer design and decoration services?",
+      "answer": "Yes, in addition to planning, I also offer design and decoration services to ensure that every detail of your wedding is beautiful and reflects your personal style."
     }
   ]
 }

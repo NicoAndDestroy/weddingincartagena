@@ -1,16 +1,12 @@
 ---
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
-
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import ContactSection from "../components/sections/landing/Contact.astro";
 import AboutSection from "../components/sections/landing/About.astro";
 import ValuesSection from "@components/sections/landing/Values.astro";
-
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import FAQ from "@components/sections/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-
 import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
@@ -29,8 +25,9 @@ const avatarSrcs: Array<string> = [
 
 <MainLayout title="Wedding In Cartagena">
   <HeroSection
-    title=`Tu boda soñada en <span class="text-yellow-500 dark:text-yellow-400">Cartagena</span>`
-    subTitle=`En <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span> hacemos tus sueños realidad en Cartagena. Con pasión y dedicación, te ayudamos a crear recuerdos inolvidables para tu boda o evento. ¡Contáctanos y comienza hoy!`
+    title=`Your Dream Wedding in <span class="text-yellow-500 dark:text-yellow-400">Cartagena</span>`
+    subTitle=`At <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span> we make your dreams come true in Cartagena. With passion and dedication, we help you create unforgettable memories for your wedding or event. Contact us and start today!
+`
     primaryBtn="Contáctanos"
     primaryBtnURL="https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"
     secondaryBtn="Envianos un mensaje"
@@ -46,7 +43,7 @@ const avatarSrcs: Array<string> = [
 
   <section id="about">
     <AboutSection
-      title="Sobre nosotros"
+      title="About Us"
       subTitle="¡Bienvenidos a nuestra familia en el mundo de los sueños hechos realidad!"
     />
 
@@ -94,8 +91,8 @@ const avatarSrcs: Array<string> = [
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <ContactSection
-    title="Construyamos Juntos Tu Boda Soñada"
-    subTitle="En Le Mariage, no solo creamos eventos, creamos experiencias que perduran toda la vida. Confía en nosotros para hacer realidad tus sueños más preciados y transformar cada momento en un recuerdo que atesorarás para siempre."
+    title="Let's Build Your Dream Wedding Together"
+    subTitle="At <span> Le Mariage</span>, we don't just create events; we create experiences that last a lifetime. Trust us to make your most cherished dreams come true and transform every moment into a memory you'll treasure forever."
     url="https://www.instagram.com/lemariagectg_weddingplanner?igsh=MTFraHQzMmM4Z21vMg%3D%3D&utm_source=qr"
   />
 </MainLayout>
