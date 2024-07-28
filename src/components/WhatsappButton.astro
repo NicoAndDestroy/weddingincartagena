@@ -1,0 +1,73 @@
+---
+
+---
+<div id="whatsapp">
+  <a
+    href="https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="toggle"
+  >
+    <img
+      src="/icons/whatsapp.svg"
+      alt="Whatsapp icon"
+      width="28px"
+    />
+  </a>
+</div>
+
+<style>
+    #whatsapp .toggle {
+        position: fixed;
+        transform: all 0.5s .ease;
+        background-color: #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: 50px;
+        border-right: none;
+        color: #fff;
+        bottom: 70px;
+        right: 20px;
+        border: 0;
+        z-index: 50;
+        width: 60px;
+        height: 60px;
+        line-height: 50px;
+    }
+
+    #whatsapp .toggle:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: #25d366;
+        border-radius: 50%;
+        -webkit-animation: pulse-border 1500ms ease-out infinite;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+
+    #whatsapp .toggle:focus {
+        border: none;
+        outline: none;
+    }
+
+    @keyframes pulse-border {
+        0% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+            opacity: 0;
+        }
+    }
+</style>
