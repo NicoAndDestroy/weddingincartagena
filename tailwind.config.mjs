@@ -16,6 +16,7 @@ export default {
       indigo: colors.indigo,
       neutral: colors.neutral,  // Used mainly for text color
       primary: {
+        400: "#e1ba8e",
         500: "#d7b286", // Main color
         600: "#c19a6e",
         700: "#a8835a",
@@ -27,9 +28,9 @@ export default {
         50: "#faf5e4",  // Lightest shade
         100: "#f5ebc8",
         200: "#f0e1ac",
-        300: "#ebd790",
-        400: "#e6cd74",
-        500: "#C3AC4F ", // Main color
+        300: "#d7b286",
+        400: "#d7b286",
+        500: "#d7b286", // Main color
         600: "#c19a6e",
         700: "#a8835a",
         800: "#8f6c46",
@@ -41,7 +42,7 @@ export default {
         100: "#f5ebc8",
         200: "#f0e1ac",
         300: "#ebd790",
-        400: "#e6cd74",
+        400: "#d7b286",
         500: "#d7b286", // Main color
         600: "#c19a6e",
         700: "#a8835a",
