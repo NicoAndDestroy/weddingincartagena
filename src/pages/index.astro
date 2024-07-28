@@ -7,12 +7,10 @@ import ContactSection from "../components/sections/landing/Contact.astro";
 import AboutSection from "../components/sections/landing/About.astro";
 import ValuesSection from "@components/sections/landing/Values.astro";
 
-import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import FAQ from "@components/sections/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import faqs from "@data/faqs.json";
 
 import heroImage from "@images/hero-image.avif";
-import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import featureImage from "@images/features-image.avif";
 import construction from "@images/construction-image.avif";
@@ -44,44 +42,7 @@ const avatarSrcs: Array<string> = [
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
-  <section id="about">
-    <AboutSection
-      title="Sobre nosotros"
-      subTitle="¡Bienvenidos a nuestra familia en el mundo de los sueños hechos realidad!"
-    />
-
-    <FeaturesNavs
-      title=`¡Bienvenidos a nuestra  <span class="text-yellow-500 dark:text-yellow-400">familia</span> en el mundo de los sueños hechos realidad!`
-      tabs={[
-        {
-          heading: "Cutting-Edge Tools",
-          content:
-            "En Le Mariage, nos enorgullece presentarnos como tu socio de confianza en la creación de momentos inolvidables en Cartagena y más allá.",
-          svg: "tools",
-          src: tools,
-          alt: "Yellow and black heavy equipment on brown grass field",
-          first: true,
-        },
-        {
-          heading: "Intuitive Dashboards",
-          content:
-            "En el corazón de nuestra empresa yace una pasión inquebrantable por la excelencia en la planificación de bodas y eventos.",
-          svg: "dashboard",
-          src: dashboard,
-          alt: "A screenshot or graphic representation of the intuitive dashboard",
-          second: true,
-        },
-        {
-          heading: "Robust Features",
-          content:
-            "Nos esforzamos por superar tus expectativas en cada paso del camino, llevando tus ideas desde la concepción hasta la realización con estilo y un toque personal incomparable.",
-          svg: "house",
-          src: construction,
-          alt: "Gray metal building frame near tower crane during daytime",
-        },
-      ]}
-    />
-  </section>
+  <AboutSection />
 
   <ValuesSection
     title="¿Qué nos distingue?"
