@@ -25,15 +25,22 @@ const footerLinks = [
       { name: "Clients", url: "#" },
     ],
   },
+  {
+    section: "Social",
+    links: [
+      { name: "Instagram", url: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D" },
+      { name: "Facebook", url: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D" },
+      { name: "Tiktok", url: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D" },
+    ],
+  },
 ];
 
 const socialLinks = {
-  facebook: "#",
-  x: "#",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "#",
-  slack: "#",
+  facebook: "https://www.facebook.com/",
+  instagram: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D",
+  tiktok: "https://www.tiktok.com/",
 };
+
 
 export default {
   navBarLinks,
