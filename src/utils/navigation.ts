@@ -24,15 +24,20 @@ const footerLinks = [
       { name: "FAQs", url: "/#faqs" },
     ],
   },
+  {
+    section: "Social",
+    links: [
+      { name: "Instagram", url: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D" },
+      { name: "Facebook", url: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D" },
+      { name: "Tiktok", url: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D" },
+    ],
+  },
 ];
 // An object of links for social icons
 const socialLinks = {
   facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
-  instagram: "https://www.instagram.com/",
+  instagram: "https://www.instagram.com/lemariagectg_weddingplanner/?igsh=MXh1aXE0cTM0Y2Nibg%3D%3D",
+  tiktok: "https://www.tiktok.com/",
 };
 
 export default {

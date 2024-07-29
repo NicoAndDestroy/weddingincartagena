@@ -22,7 +22,7 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
   <div
     class="mx-auto w-full max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:pt-20 2xl:max-w-screen-2xl"
   >
-    <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
       <div class="col-span-full lg:col-span-1">
         <!-- Brand Logo -->
         <BrandLogo class="h-auto w-52" />
@@ -54,14 +54,6 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
           </div>
         ))
       }
-
-      <div class="col-span-2">
-        <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
-          Social
-        </h3>
-
-
-      </div>
     </div>
 
     <div
@@ -69,30 +61,22 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span> {SITE.title}
+          © <span id="current-year"></span> Wedding in Cartagena by Le Mariage. All rights reserved.
         </p>
       </div>
 
       <!-- Social Brands -->
       <div>
-        <FooterSocialLink url={strings.socialLinks.facebook}
-          ><Icon name="facebookFooter" />
+        <FooterSocialLink url={strings.socialLinks.facebook}>
+          <img src="/icons/facebook.svg" alt="Social Facebook Le Mariage" />
         </FooterSocialLink>
 
-        <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
-        >
-
-        <FooterSocialLink url={strings.socialLinks.github}
-          ><Icon name="githubFooter" />
+        <FooterSocialLink url={strings.socialLinks.instagram}>
+          <img src="/icons/instagram.svg" alt="Social Instagram Le Mariage" />
         </FooterSocialLink>
 
-        <FooterSocialLink url={strings.socialLinks.google}
-          ><Icon name="googleFooter" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.slack}
-          ><Icon name="slackFooter" />
+        <FooterSocialLink url={strings.socialLinks.tiktok}>
+          <img src="/icons/tiktok.svg" alt="Social Tiktok Le Mariage" />
         </FooterSocialLink>
       </div>
     </div>
