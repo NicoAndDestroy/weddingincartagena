@@ -6,6 +6,7 @@ import HeroSection from "@components/sections/landing/HeroSection.astro";
 import ContactSection from "../components/sections/landing/Contact.astro";
 import AboutSection from "../components/sections/landing/About.astro";
 import ValuesSection from "@components/sections/landing/Values.astro";
+import CarouselVert from "@components/sections/landing/CarouselVert.astro";
 
 import FAQ from "@components/sections/FAQ.astro";
 
@@ -38,10 +39,6 @@ const avatarSrcs: Array<string> = [
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
-
-<section class="w-full">  
-  
-  <section/>
   <AboutSection />
 
   <ValuesSection
@@ -53,13 +50,10 @@ const avatarSrcs: Array<string> = [
   />
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
-
+  <CarouselVert />
   <ContactSection
     title="Let's Build Your Dream Wedding Together"
     subTitle="At Le Mariage, we don't just create events, we create experiences that last a lifetime. Trust us to make your most cherished dreams come true and transform every moment into a memory you'll cherish forever."
     url="https://www.instagram.com/lemariagectg_weddingplanner?igsh=MTFraHQzMmM4Z21vMg%3D%3D&utm_source=qr"
   />
 </MainLayout>
-
-
-

@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+
+const imagesVertical = import.meta.glob('/src/images/values/vertical/values_*.jpg', { eager: true });
+const imageArrayVertical = Object.values(imagesVertical).map((image) => ({ ...image, mode: 'vertical' }));
+
+const alt = "Bodas en Cartagena";
+
+---
+<section class="my-20">
+  <div id="wedding-slider-vert" class="relative">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {imageArrayVertical.map((image, index) => (
+        <div class="swiper-slide">
+          <Image class="w-full object-cover" src={image.default} alt={alt} />
+        </div>
+      ))}
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+</section>
+<!-- Slider main container -->
+
+<script>
+  // core version + navigation, pagination modules:
+  import Swiper from 'swiper';
+  import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+  // import Swiper and modules styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/autoplay';
+
+  const selector = document.getElementById('wedding-slider-vert');
+
+  // init Swiper:
+  const swiper = new Swiper(selector, {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination, Autoplay],
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    },
+    loop: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    navigation: {
+      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+    }
+  });
+</script>

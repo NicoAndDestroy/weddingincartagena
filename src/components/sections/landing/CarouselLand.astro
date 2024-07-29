@@ -1,24 +1,24 @@
 ---
 import { Image } from "astro:assets";
-import featureImage from "../../images/features-image.avif";
-const alt = "ScrewFast products in floating boxes";
+import featureImage from "../../../images/features-image.avif";
+
+const imagesLand = import.meta.glob('/src/images/values/land/values_*.jpg', { eager: true });
+const imageArrayLand = Object.values(imagesLand).map((image) => ({ ...image, mode: 'land' }));
+
+const alt = "Bodas en Cartagena";
 
 ---
+
 <!-- Slider main container -->
-<div id="wedding-slider" class="relative">
+<div id="wedding-slider-land" class="relative">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">
-      <Image src={featureImage} alt={alt} />
-    </div>
-    <div class="swiper-slide">
-      <Image src={featureImage} alt={alt} />
-    </div>
-    <div class="swiper-slide">
-      <Image src={featureImage} alt={alt} />
-    </div>
-    ...
+    {imageArrayLand.map((image, index) => (
+      <div class="swiper-slide">
+        <Image class="w-full aspect-[5/3] object-cover" src={image.default} alt={alt} />
+      </div>
+    ))}
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -39,18 +39,24 @@ const alt = "ScrewFast products in floating boxes";
   import 'swiper/css';
   import 'swiper/css/navigation';
   import 'swiper/css/pagination';
-  import 'swiper/css/autoplay'
+  import 'swiper/css/autoplay';
 
-  const selector = document.getElementById('wedding-slider');
+  const selector = document.getElementById('wedding-slider-land');
 
   // init Swiper:
   const swiper = new Swiper(selector, {
     // configure Swiper to use modules
     modules: [Navigation, Pagination, Autoplay],
-    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    loop: false,
     slidesPerView: 1,
     spaceBetween: 40,
-    navigation: {          // definir botones next y prev para el módulo Navigation
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    navigation: {
       prevEl: ".swiper-button-prev",
       nextEl: ".swiper-button-next",
     }
