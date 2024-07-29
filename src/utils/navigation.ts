@@ -10,20 +10,18 @@ const navBarLinks = [
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "Contact",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "contact@weddingincartagena.com", url: "mailto:contact@weddingincartagena.com" },
+      { name: "+573226943874", url: "https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!" },
     ],
   },
   {
-    section: "Company",
+    section: "Site",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "About Us", url: "/#about" },
+      { name: "Our Values", url: "/#values" },
+      { name: "FAQs", url: "/#faqs" },
     ],
   },
 ];
@@ -34,6 +32,7 @@ const socialLinks = {
   github: "https://github.com/mearashadowfax/ScrewFast",
   google: "https://www.google.com/",
   slack: "https://slack.com/",
+  instagram: "https://www.instagram.com/",
 };
 
 export default {

@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import featureImage from "../../../images/features-image.avif";
 
 const imagesLand = import.meta.glob('/src/images/values/land/values_*.jpg', { eager: true });
+// @ts-ignore
 const imageArrayLand = Object.values(imagesLand).map((image) => ({ ...image, mode: 'land' }));
 
 const alt = "Bodas en Cartagena";
@@ -44,6 +45,7 @@ const alt = "Bodas en Cartagena";
   const selector = document.getElementById('wedding-slider-land');
 
   // init Swiper:
+  // @ts-ignore
   const swiper = new Swiper(selector, {
     // configure Swiper to use modules
     modules: [Navigation, Pagination, Autoplay],

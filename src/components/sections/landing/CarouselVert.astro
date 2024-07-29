@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 
 const imagesVertical = import.meta.glob('/src/images/values/vertical/values_*.jpg', { eager: true });
+// @ts-ignore
 const imageArrayVertical = Object.values(imagesVertical).map((image) => ({ ...image, mode: 'vertical' }));
 
 const alt = "Bodas en Cartagena";
@@ -45,6 +46,7 @@ const alt = "Bodas en Cartagena";
   const selector = document.getElementById('wedding-slider-vert');
 
   // init Swiper:
+  // @ts-ignore
   const swiper = new Swiper(selector, {
     // configure Swiper to use modules
     modules: [Navigation, Pagination, Autoplay],
