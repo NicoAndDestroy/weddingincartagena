@@ -1,15 +1,12 @@
 ---
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
-
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import ContactSection from "../components/sections/landing/Contact.astro";
 import AboutSection from "../components/sections/landing/About.astro";
 import ValuesSection from "@components/sections/landing/Values.astro";
-import CarouselVert from "@components/sections/landing/CarouselVert.astro";
-
+import CarouselVert from "@/components/sections/landing/CarouselVert.astro";
 import FAQ from "@components/sections/FAQ.astro";
-
 import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
@@ -39,6 +36,7 @@ const avatarSrcs: Array<string> = [
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
+
   <AboutSection />
 
   <ValuesSection
@@ -51,6 +49,7 @@ const avatarSrcs: Array<string> = [
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
   <CarouselVert />
+
   <ContactSection
     title="Let's Build Your Dream Wedding Together"
     subTitle="At Le Mariage, we don't just create events, we create experiences that last a lifetime. Trust us to make your most cherished dreams come true and transform every moment into a memory you'll cherish forever."
