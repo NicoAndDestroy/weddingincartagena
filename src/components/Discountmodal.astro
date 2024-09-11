@@ -5,11 +5,17 @@
 <div id="discount-modal" class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 hidden">
   <div class="bg-white p-8 rounded-lg shadow-lg text-center">
     <h2 class="text-2xl font-bold mb-4">Special discount!</h2>
-    <p class="mb-4">Get <strong>10% off </strong> on your first booking with the code:</p>
-    <p class="font-bold text-lg mb-4">CARTAGENA10</p>
-    <button class="bg-yellow-500 text-white px-4 py-2 rounded" id="close-modal-btn">Close</button>
-  </div>
-</div>
+    <p class="mb-4">Only for this month of love<strong>, contact us to get a 20% discount </strong> on your dream wedding with the code:</p>
+    <p class="font-bold text-lg mb-4">C1RT/GENA20</p>
+
+    <!-- Contenedor flex para los botones con espacio entre ellos -->
+    <div class="flex justify-center space-x-4 sm:space-x-8 md:space-x-16 lg:space-x-24">
+      <button class="bg-gray-500 text-white px-4 py-2 rounded" id="close-modal-btn">Close</button>
+      <a href="https://wa.me/573226943874?text=Hello!%20Congratulations!%20You%20are%20just%20one%20step%20away%20from%20making%20your%20dream%20wedding%20in%20Cartagena%20come%20true.%0A%0AFor%20this%20month%20only,%20we%20are%20offering%20you%20a%20**20%%20discount**%20on%20your%20celebration%20with%20the%20exclusive%20code:%20**C1RT/GENA20**.%20Plus,%20we%20want%20to%20offer%20you%20a%20**free%20quote**%20to%20start%20planning%20every%20special%20detail%20of%20your%20big%20day.%0A%0ADon’t%20miss%20this%20unique%20opportunity!%20Contact%20us%20now,%20and%20together%20we%20will%20make%20your%20wedding%20an%20unforgettable%20experience.%0A%0AWe%20are%20excited%20to%20be%20part%20of%20this%20special%20moment!%0A%0ALe%20Mariage%20Team" target="_blank" class="bg-yellow-500 text-white px-4 py-2 rounded">
+        Contact us
+      </a>
+    </div>
+    
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +24,7 @@
 
     // Verifica si 'modal' y 'closeModalBtn' no son nulos
     if (modal && closeModalBtn) {
-      // Muestra el modal después de 2 segundos al cargar la página
+      // Muestra el modal después de 1 segundos al cargar la página
       setTimeout(() => {
         modal.classList.remove('hidden');
       }, 1000);
