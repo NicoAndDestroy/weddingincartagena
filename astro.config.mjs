@@ -16,7 +16,10 @@ export default defineConfig({
   },
 
   prefetch: true,
-
+  server:{
+    port: 2363,
+    host: true
+  },
   integrations: [
     tailwind(),
     sitemap({
