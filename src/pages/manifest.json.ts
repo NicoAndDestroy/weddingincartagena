@@ -9,6 +9,13 @@ interface Favicon {
   sizes: number[];
 }
 
+interface IconManifest {
+  src: string;
+  sizes: string;
+  type: string;
+  purpose: 'any' | 'maskable' | 'monochrome';
+}
+
 const sizes = [192, 512];
 const favicons: Favicon[] = [
   {
@@ -24,7 +31,7 @@ const favicons: Favicon[] = [
 ];
 
 export const GET: APIRoute = async () => {
-  const icons = await Promise.all(
+  const icons: IconManifest[] = await Promise.all(
     favicons.flatMap((favicon) =>
       favicon.sizes.map(async (size) => {
         const image = await getImage({

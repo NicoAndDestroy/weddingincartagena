@@ -13,7 +13,7 @@ const alt = "Bodas en Cartagena";
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      {imageArrayVertical.map((image, index) => (
+      {imageArrayVertical.map((image) => (
         <div class="swiper-slide">
           <Image class="w-full md:h-[700px] object-cover" src={image.default} alt={alt} />
         </div>
@@ -47,7 +47,7 @@ const alt = "Bodas en Cartagena";
 
   // init Swiper:
   // @ts-ignore
-  const swiper = new Swiper(selector, {
+  new Swiper(selector, {
     // configure Swiper to use modules
     modules: [Navigation, Pagination, Autoplay],
     autoplay: {

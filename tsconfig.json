@@ -10,6 +10,7 @@
       "@images/*": ["src/images/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"]
-    },
-  }
+    }
+  },
+  "exclude": ["public", "node_modules", "src/components/ui/buttons/SocialShare.astro"]
 }
