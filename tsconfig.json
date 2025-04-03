@@ -12,5 +12,5 @@
       "@utils/*": ["src/utils/*"]
     }
   },
-  "exclude": ["public", "node_modules", "src/components/ui/buttons/SocialShare.astro"]
+  "exclude": ["public", "dist", ".astro", ".vscode", "node_modules", "src/components/ui/buttons/SocialShare.astro"]
 }
