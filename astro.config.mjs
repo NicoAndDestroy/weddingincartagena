@@ -10,14 +10,13 @@ import node from "@astrojs/node";
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://weddingincartagena.com",
-
+  output: 'server',
   image: {
     domains: ["images.unsplash.com"],
   },
-
   prefetch: true,
   server:{
-    port: 2363,
+    port: 4545,
     host: true
   },
   integrations: [
