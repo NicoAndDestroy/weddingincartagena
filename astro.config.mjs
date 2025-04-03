@@ -4,14 +4,19 @@ import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
 
+import node from "@astrojs/node";
+
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://weddingincartagena.com",
+
   image: {
     domains: ["images.unsplash.com"],
   },
+
   prefetch: true,
+
   integrations: [
     tailwind(),
     sitemap({
@@ -105,9 +110,10 @@ export default defineConfig({
       brotli: true,
     }),
   ],
+
   output: "static",
-  experimental: {
-    clientPrerender: true,
-    directRenderScript: true,
-  },
+
+  adapter: node({
+    mode: "standalone",
+  }),
 });
