@@ -8,15 +8,6 @@ const {
   subTitle,
   primaryBtn,
   primaryBtnURL,
-  secondaryBtn,
-  secondaryBtnURL,
-  withReview,
-  avatars,
-  starCount,
-  rating,
-  reviews,
-  src,
-  alt
 } = Astro.props;
 
 // Define TypeScript interface for props
@@ -25,12 +16,11 @@ interface Props {
   subTitle?: string;
   primaryBtn?: string;
   primaryBtnURL?: string;
-  secondaryBtn?: string;
   secondaryBtnURL?: string;
   withReview?: boolean;
-  avatars?: Array<string>;
-  starCount?: number;
+  avatars?: string[];
   rating?: string;
+  starCount?: number;
   reviews?: string;
   src?: any;
   alt?: string;
@@ -64,12 +54,6 @@ interface Props {
       <WhatsappBtn title={primaryBtn} url={primaryBtnURL} />
       }
     </div>
-
-    <!-- Review Section: This section presents avatars, review ratings and the number of reviews
-    { withReview ? (
-    <ReviewComponent avatars={avatars} starCount={starCount} rating={rating} reviews={reviews} />
-    ) : "" }
-      -->
   </div>
 
   <!-- Hero Image Section -->

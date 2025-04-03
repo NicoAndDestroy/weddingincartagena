@@ -19,7 +19,7 @@ interface Props {
      which automatically prefetches the linked page to speed up navigation. -->
 <a
   class="group relative block rounded-xl outline-none ring-zinc-500 transition duration-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-  href={blogLocale !== "" ? `/${blogLocale}/blog/${blogEntry.slug}/` : `/blog/${blogEntry.slug}/`}
+  href={blogLocale !== "" ? `/${blogLocale}/blog/${blogEntry.data.slug}/` : `/blog/${blogEntry.data.slug}/`}
   data-astro-prefetch
 >
   <!-- The container for the blog post's cover image. Uses astro:assets' Image for image source -->
@@ -52,17 +52,17 @@ interface Props {
       </div>
     </div>
   </div>
-  <!-- The container for the blog post's title and description -->
+  <!-- The container for the blog post's title and excerpt -->
   <div class="absolute inset-x-0 bottom-0 z-10">
     <div class="flex h-full flex-col p-4 sm:p-6">
-      <h3
-        class="text-balance text-lg font-bold text-neutral-50 group-hover:text-neutral-50/[.8] sm:text-3xl"
-      >
-        {blogEntry.data.title}
-      </h3>
-      <p class="mt-2 text-pretty text-neutral-50/[.8]">
-        {blogEntry.data.description}
-      </p>
+      <div class="mt-auto">
+        <h3 class="text-xl font-bold text-neutral-50">
+          {blogEntry.data.title}
+        </h3>
+        <p class="mt-2 text-sm text-neutral-50/[.8]">
+          {blogEntry.data.excerpt}
+        </p>
+      </div>
     </div>
   </div>
 </a>

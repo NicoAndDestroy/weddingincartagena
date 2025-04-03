@@ -1,13 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import featureImage from "../../../images/features-image.avif";
 
 const imagesLand = import.meta.glob('/src/images/values/land/values_*.jpg', { eager: true });
 // @ts-ignore
 const imageArrayLand = Object.values(imagesLand).map((image) => ({ ...image, mode: 'land' }));
 
 const alt = "Bodas en Cartagena";
-
 ---
 
 <!-- Slider main container -->
@@ -15,7 +13,7 @@ const alt = "Bodas en Cartagena";
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    {imageArrayLand.map((image, index) => (
+    {imageArrayLand.map((image) => (
       <div class="swiper-slide">
         <Image class="w-full aspect-[5/3] object-cover" src={image.default} alt={alt} />
       </div>
@@ -46,7 +44,7 @@ const alt = "Bodas en Cartagena";
 
   // init Swiper:
   // @ts-ignore
-  const swiper = new Swiper(selector, {
+  new Swiper(selector, {
     // configure Swiper to use modules
     modules: [Navigation, Pagination, Autoplay],
     autoplay: {
@@ -63,5 +61,4 @@ const alt = "Bodas en Cartagena";
       nextEl: ".swiper-button-next",
     }
   });
-
 </script>
