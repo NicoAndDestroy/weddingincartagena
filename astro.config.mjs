@@ -8,24 +8,23 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://weddingincartagena.com",
-  output: 'server',
+  output: "server",
   image: {
     domains: ["images.unsplash.com"],
   },
   prefetch: true,
-  server:{
+  server: {
     port: 4545,
-    host: true
+    host: true,
   },
   integrations: [
     tailwind(),
     sitemap({
       i18n: {
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
+        defaultLocale: "en",
         locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
+          en: "en",
           es: "es",
         },
       },
@@ -33,16 +32,8 @@ export default defineConfig({
     starlight({
       title: "WeddinginCartagena",
       defaultLocale: "root",
-      // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
-      // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
-      // If only a Starlight i18n configuration is provided, an equivalent Astro i18n configuration is generated/used.
-      // If only an Astro i18n configuration is provided, the Starlight i18n configuration is updated to match it.
-      // If both an Astro and Starlight i18n configurations are provided, an error is thrown.
       locales: {
-        root: {
-          label: "English",
-          lang: "en",
-        },
+        root: { label: "English", lang: "en" },
         de: { label: "Deutsch", lang: "de" },
         es: { label: "Español", lang: "es" },
         fa: { label: "Persian", lang: "fa", dir: "rtl" },
@@ -50,7 +41,6 @@ export default defineConfig({
         ja: { label: "日本語", lang: "ja" },
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
-      // https://starlight.astro.build/guides/sidebar/
       sidebar: [
         {
           label: "Quick Start Guides",
@@ -80,29 +70,36 @@ export default defineConfig({
           autogenerate: { directory: "advanced" },
         },
       ],
-      social: {
-        github: "https://github.com/mearashadowfax/ScrewFast",
-      },
-      disable404Route: true,
-      customCss: ["./src/styles/starlight.css"],
-      favicon: "/favicon.ico",
-      components: {
-        SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
-        Head: "./src/components/ui/starlight/Head.astro",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/NicoAndDestroy",
+        },
+        {
+          icon: "instagram",
+          label: "Instagram",
+          href: "https://www.instagram.com/lemariagectg_weddingplanner?igsh=MXh1aXE0cTM0Y2Nibg==",
+        },
+        {
+          icon: "tiktok",
+          label: "TikTok",
+          href: "https://www.tiktok.com/@le.mariage.ctg?_t=ZS-8vfhVOohLmK&_r=1",
+        },
+      ],
       head: [
         {
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://screwfast.uk/social.webp",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://screwfast.uk/social.webp",
           },
         },
       ],
