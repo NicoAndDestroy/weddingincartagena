@@ -26,12 +26,12 @@ export default defineConfig({
         defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
         locales: {
           en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
+          es: "es",
         },
       },
     }),
     starlight({
-      title: "ScrewFast Docs",
+      title: "WeddinginCartagena",
       defaultLocale: "root",
       // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
       // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
