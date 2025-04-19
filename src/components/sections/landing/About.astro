@@ -3,6 +3,12 @@ import FeaturesNavs from "../features/FeaturesNavs.astro";
 import AbountOne from "@images/about/about_1.webp";
 import AbountTwo from "@images/about/about_2.webp";
 import AbountThree from "@images/about/about_3.webp";
+
+// Traducción dinámica
+const { t } = Astro.props;
+
+// Imágenes (puedes también cargarlas dinámicamente si quieres, pero así es más simple)
+const images = [AbountOne, AbountTwo, AbountThree];
 ---
 <section id="about" class="my-20">
   <FeaturesNavs
