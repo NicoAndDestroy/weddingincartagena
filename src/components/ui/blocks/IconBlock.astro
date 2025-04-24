@@ -14,9 +14,11 @@ const contentClasses =
 ---
 
 <!-- The root container that arranges your slot and the heading/content -->
-<div class="flex gap-x-5">
-  <!-- Slot to allow for extensibility of the component -->
-  <slot />
+<div class="flex items-start gap-x-5">
+  <!-- Icon slot, always left-aligned and sized -->
+  <div class="flex-shrink-0 flex items-center justify-center w-12 h-12">
+    <slot />
+  </div>
   <div class="grow">
     <!-- Heading of the section -->
     <h3 class={headingClasses}>
