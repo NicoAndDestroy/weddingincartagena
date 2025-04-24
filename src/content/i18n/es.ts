@@ -21,49 +21,34 @@ const es = {
       alt: "Sección sobre los valores de Le Mariage: Pasión, recuerdos únicos y confianza.",
       features: [
         {
-          heading: "Pasión",
-          content: "Nos apasiona crear experiencias únicas e inolvidables para cada pareja.",
+          heading: "Cultura",
+          content: "Sumérjase en la rica historia y vibrante cultura de Cartagena, donde la arquitectura colonial se mezcla con la calidez y alegría de sus gentes, creando un ambiente único y encantador para sus eventos.",
           svg: "heart"
         },
         {
-          heading: "Recuerdos Únicos",
-          content: "Cada boda es una historia, y nos aseguramos de que la tuya sea memorable.",
+          heading: "Recuerdos",
+          content: "En Cartagena, cada momento se convierte en un recuerdo inolvidable. Desde pintorescas puestas de sol hasta noches llenas de música y baile, encontrará inspiración en cada esquina para crear experiencias memorables para usted y sus invitados",
           svg: "star"
         },
         {
-          heading: "Confianza",
-          content: "La transparencia y honestidad son la base de nuestra relación contigo.",
+          heading: "Tradición",
+          content: "Celebre sus eventos en el corazón de la historia, rodeado de antiguas murallas, fortalezas y calles adoquinadas que evocan el encanto de la época colonial y añaden un toque de autenticidad a sus celebraciones.",
           svg: "shield"
         },
         {
-          heading: "Cultura",
-          content: "Abrazamos la rica cultura de Cartagena para que tu celebración sea verdaderamente especial.",
+          heading: "Ambiente",
+          content: "Disfrute del clima tropical y de las hermosas playas de Cartagena, que constituyen el telón de fondo perfecto para sus bodas y eventos al aire libre, llenos de romanticismo y elegancia.",
           svg: "globe"
         },
         {
-          heading: "Recuerdos",
-          content: "Te ayudamos a crear recuerdos que durarán toda la vida.",
+          heading: "Aventura",
+          content: "Descubra la emoción de explorar las maravillas naturales y culturales que ofrece Cartagena, desde excursiones a islas caribeñas hasta visitas guiadas a los lugares más emblemáticos de la ciudad, siempre hay algo nuevo que descubrir.",
           svg: "camera"
         },
         {
-          heading: "Tradición",
-          content: "Honramos las tradiciones mientras hacemos tu evento único para ti.",
-          svg: "flag"
-        },
-        {
-          heading: "Ambiente",
-          content: "Creamos el ambiente perfecto para la boda de tus sueños.",
-          svg: "sun"
-        },
-        {
           heading: "Naturaleza",
-          content: "La belleza natural de Cartagena está presente en cada evento.",
-          svg: "leaf"
-        },
-        {
-          heading: "Aventura",
-          content: "Convierte tu boda en una aventura que nunca olvidarás.",
-          svg: "compass"
+          content: "Disfrute de la exuberante belleza natural de Cartagena, desde sus playas cristalinas hasta sus vibrantes paisajes tropicales, que le invitan a celebrar en armonía con la naturaleza y a crear momentos mágicos que durarán para siempre.",
+          svg: "flag"
         }
       ]
     },
@@ -72,32 +57,32 @@ const es = {
       subTitle: "Pregúntenos cualquier cosa sobre nuestra marca y servicios y obtenga una respuesta inmediata.",  
       faqs: [
         {
-          question: "¿Qué servicios ofrecen?",
-          answer: "Ofrecemos servicios integrales de planeación, coordinación y diseño de bodas en Cartagena."
+          question: "¿Qué servicios ofrece como organizador de bodas en Cartagena?",
+          answer: "Ofrezco una gama completa de servicios de planificación de bodas en Cartagena, incluyendo la coordinación del día, la planificación completa, el diseño y la decoración, la selección de proveedores, la gestión del presupuesto, y mucho más. Mi objetivo es asegurar que su día especial sea perfecto en todos los sentidos."
         },
         {
-          question: "¿Con cuánta anticipación debo reservar?",
-          answer: "Recomendamos reservar al menos con 6-12 meses de anticipación para asegurar tu fecha preferida."
+          question: "¿Cómo trabajas con las parejas para planificar su boda en Cartagena?",
+          answer: "Trabajo estrechamente con cada pareja para comprender su visión y sus preferencias. Nos reunimos para discutir sus ideas, temas y deseos específicos. A partir de ahí, creo un plan detallado y personalizado para que cada aspecto de su boda sea exactamente como lo imaginaron, aprovechando la belleza y el encanto de Cartagena."
         },
         {
-          question: "¿Ayudan con los trámites legales?",
-          answer: "Sí, te ayudamos con todos los requisitos legales y de documentación para tu boda."
+          question: "¿Con cuánta antelación debo contratar a un organizador de bodas en Cartagena?",
+          answer: "Recomiendo contratar a un organizador de bodas en cuanto decidáis casaros. Cuanto más tiempo tengamos para planificar, mejor podremos organizar todos los detalles y asegurarnos de que todo salga a la perfección. Sin embargo, también ofrezco servicios de coordinación del día de la boda para bodas que ya están en marcha."
         },
         {
           question: "¿Trabajan con un presupuesto específico?",
-          answer: "¡Por supuesto! Adaptamos nuestros servicios a tu presupuesto y visión."
+          answer: "Sí, trabajo con el presupuesto que tengas en mente. Parte de mi trabajo consiste en ayudarte a maximizar tu presupuesto y encontrar soluciones creativas para conseguir la boda de tus sueños sin sobrepasar tus límites económicos."
         },
         {
           question: "¿Qué pasa si necesito cambiar la fecha de mi boda?",
-          answer: "Trabajaremos contigo para reprogramar y adaptarnos a cualquier cambio en tus planes."
+          answer: "Entiendo que pueden surgir circunstancias imprevistas. Trabajo con usted para hacer los ajustes necesarios y reorganizar todos los aspectos de la boda para la nueva fecha, asegurando que todo se maneje de la mejor manera posible."
         },
         {
           question: "¿Cómo puedo contactarlos para hablar de los detalles de mi boda en Cartagena?",
-          answer: "Puedes contactarnos por WhatsApp, correo electrónico o nuestro formulario web. ¡Estamos para ayudarte!"
+          answer: "Puede ponerse en contacto conmigo directamente a través de WhatsApp haciendo clic en el botón de abajo. Estoy disponible para responder a tus preguntas, discutir tus ideas y empezar a planear la boda de tus sueños."
         },
         {
           question: "¿Ofrecen servicios de diseño y decoración?",
-          answer: "Sí, ofrecemos servicios completos de diseño y decoración para que tu boda sea hermosa y única."
+          answer: "Sí, además de la planificación, también ofrezco servicios de diseño y decoración para garantizar que cada detalle de su boda sea hermoso y refleje su estilo personal."
         }
       ]
     },
@@ -162,6 +147,7 @@ const es = {
           alt: "Estructura metálica gris cerca de una grúa durante el día",
         },
       ],
+      alt: "Sobre Nosotros de Le Mariage, la familia que hace realidad tus sueños en Cartagena y más allá." 
     },
   };
   
