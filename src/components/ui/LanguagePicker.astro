@@ -2,7 +2,7 @@
 import Icon from "./icons/Icon.astro";
 
 const languages = ["en", "es"];
-const languageLabels = { en: "English", es: "Español" };
+const languageLabels: { [key: string]: string } = { en: "English", es: "Español" };
 ---
 
 <div class="hs-dropdown relative inline-flex">

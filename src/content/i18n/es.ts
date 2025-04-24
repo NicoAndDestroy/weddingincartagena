@@ -68,7 +68,8 @@ const es = {
       ]
     },
     faq: {
-      title: "Preguntas<br />frecuentes",
+      title: "Preguntas frecuentes",
+      subTitle: "Pregúntenos cualquier cosa sobre nuestra marca y servicios y obtenga una respuesta inmediata.",  
       faqs: [
         {
           question: "¿Qué servicios ofrecen?",
@@ -102,7 +103,33 @@ const es = {
     },
     footer: {
       copyright: "©",
-      brand: "Bodas en Cartagena por Le Mariage. Todos los derechos reservados."
+      brand: "Bodas en Cartagena por Le Mariage. Todos los derechos reservados.",
+      links: [
+        {
+          section: "Contacto",
+          links: [
+            { name: "contact@weddingincartagena.com", url: "mailto:contact@weddingincartagena.com" },
+            { name: "+57 322 694 3874", url: "tel:+573226943874" },
+            { name: "Cartagena, Colombia", url: "https://goo.gl/maps/9E3e6Yx7qJbKjK5u7" }
+          ]
+        },
+        {
+          section: "Sitio",
+          links: [
+            { name: "Sobre Nosotros", url: "/es#about" },
+            { name: "Nuestros Valores", url: "/es#values" },
+            { name: "Preguntas Frecuentes", url: "/es#faq" }
+          ]
+        },
+        {
+          section: "Social",
+          links: [
+            { name: "Instagram", url: "https://instagram.com/lemariagecartagena" },
+            { name: "Facebook", url: "https://facebook.com/lemariagecartagena" },
+            { name: "Tiktok", url: "https://tiktok.com/@lemariagecartagena" }
+          ]
+        }
+      ]
     },
     contact: {
       title: "Construyamos juntos la boda de tus sueños",

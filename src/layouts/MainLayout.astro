@@ -15,6 +15,7 @@ const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
 
 // Interface to type-check the properties
 interface Props {
+  t?: any;
   title?: string;
   meta?: string;
   structuredData?: object;

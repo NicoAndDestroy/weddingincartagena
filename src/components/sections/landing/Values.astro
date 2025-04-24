@@ -13,6 +13,7 @@ interface Feature {
 }
 
 interface Props {
+  t?: any;
   title?: string;
   subTitle?: string;
   features?: Feature[];
@@ -61,7 +62,7 @@ const sectionFeatures = t?.values?.features ?? features;
       <div class="grid gap-8 sm:grid-cols-2 md:gap-12">
         <!-- Injecting IconBlock components with different properties -->
         { sectionFeatures &&
-          sectionFeatures.map((feature) => (
+          sectionFeatures.map((feature: Feature) => (
             <IconBlock heading={feature.heading} content={feature.content}>
               <Icon name={feature.svg} />
             </IconBlock>

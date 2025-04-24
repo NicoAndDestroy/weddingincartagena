@@ -3,7 +3,7 @@
 import AccordionItem from "@components/ui/blocks/AccordionItem.astro";
 
 // Define props from Astro
-const { t, title, faqs } = Astro.props;
+const { t, faqs } = Astro.props;
 const sectionTitle = t?.faq?.title;
 let sectionFaqs = t?.faq?.faqs ?? faqs;
 if (sectionFaqs && !Array.isArray(sectionFaqs) && Array.isArray(sectionFaqs.faqs)) {
@@ -22,8 +22,8 @@ interface FaqGroup {
 }
 
 interface Props {
-  title: string;
-  faqs: FaqGroup;
+  t?: any;
+  faqs?: FaqGroup;
 }
 // Define a helper function to generate ids dynamically.
 const makeId = (base: any, index: any) => `${base}${index + 1}`;
@@ -53,7 +53,7 @@ const makeId = (base: any, index: any) => `${base}${index + 1}`;
         class="hs-accordion-group divide-y divide-neutral-200 dark:divide-neutral-700"
       >
         {sectionFaqs &&
-          sectionFaqs.map((question, idx) => {
+          sectionFaqs.map((question: Faq, idx: number) => {
             // Generate ids dynamically for each FAQ accordion item.
             let id = makeId(
               "hs-basic-with-title-and-arrow-stretched-heading-",

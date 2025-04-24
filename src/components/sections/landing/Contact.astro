@@ -3,13 +3,15 @@
 import WhatsappBtn from "@components/ui/buttons/WhatsappBtn.astro";
 
 // Define props from Astro
-const { title, subTitle, url, btnTitle = "Contáctanos" } = Astro.props;
+const { t, title, subTitle, url, btnTitle = "Contáctanos", alt } = Astro.props;
 
 // Define TypeScript interface for props
 interface Props {
-  title: string;
+  t?: any;
+  title?: string;
   subTitle?: string;
   url?: string;
+  btnTitle?: string;
   alt?: string;
 }
 ---
