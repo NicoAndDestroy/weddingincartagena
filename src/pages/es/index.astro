@@ -1,9 +1,10 @@
 ---
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
+import Navbar from "@components/sections/Navbar.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
-import ContactSection from "../components/sections/landing/Contact.astro";
-import AboutSection from "../components/sections/landing/About.astro";
+import ContactSection from "../../components/sections/landing/Contact.astro";
+import AboutSection from "../../components/sections/landing/About.astro";
 import ValuesSection from "@components/sections/landing/Values.astro";
 import CarouselVert from "@/components/sections/landing/CarouselVert.astro";
 import FAQ from "@components/sections/FAQ.astro";
@@ -13,10 +14,8 @@ import features from "@data/features.json";
 import featureImage from "@images/features-image.avif";
 
 // Traducción
-import en from "@/content/i18n/en";
-const t = en;
-
-
+import es from "@/content/i18n/es";
+const t = es;
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -26,13 +25,13 @@ const avatarSrcs: Array<string> = [
 ];
 ---
 
-<MainLayout title="Wedding In Cartagena Colombia" t={t}>
+<MainLayout title="Bodas en Cartagena Colombia" t={t}>
   <HeroSection
     title={t.hero.title}
     subTitle={t.hero.subTitle}
     primaryBtn={t.hero.cta}
     primaryBtnURL="https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"
-    secondaryBtnURL="/contact"
+    secondaryBtnURL="/es/contact"
     withReview={true}
     avatars={avatarSrcs}
     rating={t.hero.rating}
@@ -42,18 +41,20 @@ const avatarSrcs: Array<string> = [
     alt={t.hero.alt}
   />
 
-  
   <AboutSection t={t} />
 
-  <ValuesSection t={t} src={featureImage} alt={t.values?.alt || "About Section of Le Mariage with our values: Passion, Unique memories and trust."} features={features} />
+  <ValuesSection t={t} src={featureImage} alt={t.values?.alt} features={features} />
 
   <FAQ t={t} faqs={faqs} />
   <CarouselVert />
 
   <ContactSection
-    title="Let's Build Your Dream Wedding Together"
-    subTitle="At Le Mariage, we don't just create events, we create experiences that last a lifetime. Trust us to make your most cherished dreams come true and transform every moment into a memory you'll cherish forever."
-    url="https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"
-    alt="FAQ Section of Le Mariage with the most coomon queries and answers."  
-    />
+    title={t.contact?.title}
+    subTitle={t.contact?.subTitle}
+    url={t.contact?.url}
+    alt={t.contact?.alt}
+    subTitle={t.contact?.subTitle || "En Le Mariage, no solo creamos eventos, creamos experiencias que duran toda la vida. Confía en nosotros para hacer realidad tus sueños más preciados y transformar cada momento en un recuerdo que atesorarás por siempre."}
+    url={t.contact?.url || "https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"}
+    alt={t.contact?.alt || "Sección de preguntas frecuentes de Le Mariage con las dudas y respuestas más comunes."}
+  />
 </MainLayout>

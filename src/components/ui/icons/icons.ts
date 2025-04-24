@@ -1,4 +1,64 @@
 export const Icons = {
+  heart: {
+    paths: [
+      {
+        d: "M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z",
+      },
+    ],
+    class: "h-8 w-8 flex-shrink-0 fill-primary-500 dark:fill-primary-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+  },
+  star: {
+    paths: [
+      {
+        d: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z",
+      },
+    ],
+    class: "h-8 w-8 flex-shrink-0 fill-primary-500 dark:fill-primary-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+  },
+  shield: {
+    paths: [
+      {
+        d: "M12 2l7 4v6c0 5.55-3.84 10.74-7 12-3.16-1.26-7-6.45-7-12V6l7-4z",
+      },
+    ],
+    class: "h-8 w-8 flex-shrink-0 fill-primary-500 dark:fill-primary-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+  },
+  globe: {
+    paths: [
+      {
+        d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-16c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2zm0 16c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm7-7h-3c0-2.21-1.79-4-4-4V5c3.87 0 7 3.13 7 7zm-7-5c-2.21 0-4 1.79-4 4H5c0-3.87 3.13-7 7-7v3zm-5 5c0 2.21 1.79 4 4 4v3c-3.87 0-7-3.13-7-7h3zm5 4c2.21 0 4-1.79 4-4h3c0 3.87-3.13 7-7 7v-3z",
+      },
+    ],
+    class: "h-8 w-8 flex-shrink-0 fill-primary-500 dark:fill-primary-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+  },
+  camera: {
+    paths: [
+      {
+        d: "M12 17c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm9-7h-2.35l-1.83-3.27A2.003 2.003 0 0 0 15.13 5h-6.26c-.75 0-1.44.41-1.79 1.07L5.35 10H3c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2zm-9 8c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z",
+      },
+    ],
+    class: "h-8 w-8 flex-shrink-0 fill-primary-500 dark:fill-primary-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+  },
+  flag: {
+    paths: [
+      {
+        d: "M4 2c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V2zm2 0v16h12V2H6z",
+      },
+    ],
+    class: "h-8 w-8 flex-shrink-0 fill-primary-500 dark:fill-primary-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+  },
   groups: {
     paths: [
       {
@@ -31,6 +91,7 @@ export const Icons = {
     width: 48,
     height: 48,
     viewBox: "0 -960 960 960",
+    
   },
   frame: {
     paths: [
@@ -109,7 +170,7 @@ export const Icons = {
         d: "M10 18a8 8 0 100-16 8 8 0 000 16zM13.707 8.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
       },
     ],
-    class: "h-5 w-5 shrink-0",
+    class: "h-5 w-5 shrink-0 fill-primary-500 dark:fill-primary-400",
     viewBox: "0 0 20 20",
     fill: "currentColor",
     fillRule: "evenodd",

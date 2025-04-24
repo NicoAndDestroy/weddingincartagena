@@ -13,6 +13,7 @@ interface Feature {
 }
 
 interface Props {
+  t?: any;
   title?: string;
   subTitle?: string;
   features?: Feature[];
@@ -20,7 +21,10 @@ interface Props {
   alt?: string;
 }
 // Define props from Astro
-const { title, subTitle, features } = Astro.props;
+const { t, title, subTitle, features } = Astro.props;
+const sectionTitle = t?.values?.title ?? title;
+const sectionSubTitle = t?.values?.subTitle ?? subTitle;
+const sectionFeatures = t?.values?.features ?? features;
 ---
 
 <section
@@ -41,13 +45,13 @@ const { title, subTitle, features } = Astro.props;
       <h2
         class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl"
       >
-        {title}
+        {sectionTitle}
       </h2>
       <!-- Rendering subtitle -->
       {
-        subTitle && (
+        sectionSubTitle && (
           <p class="mt-2 text-pretty text-neutral-600 dark:text-neutral-400 md:mt-4">
-            {subTitle}
+            {sectionSubTitle}
           </p>
         )
       }
@@ -57,8 +61,8 @@ const { title, subTitle, features } = Astro.props;
     <div class="lg:col-span-2">
       <div class="grid gap-8 sm:grid-cols-2 md:gap-12">
         <!-- Injecting IconBlock components with different properties -->
-        { features &&
-          features.map((feature) => (
+        { sectionFeatures &&
+          sectionFeatures.map((feature: Feature) => (
             <IconBlock heading={feature.heading} content={feature.content}>
               <Icon name={feature.svg} />
             </IconBlock>

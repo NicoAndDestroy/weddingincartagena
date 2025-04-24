@@ -12,32 +12,27 @@ const images = [AbountOne, AbountTwo, AbountThree];
 ---
 <section id="about" class="my-20">
   <FeaturesNavs
-    title=`About Us`
-    subTitle=`Welcome to our <span class="text-yellow-500 dark:text-yellow-400">family</span> in the world of dreams come true!`
+    title={t.about?.title || "About Us"}
+    subTitle={t.about?.subTitle || `Welcome to our <span class="text-yellow-500 dark:text-yellow-400">family</span> in the world of dreams come true!`}
     tabs={[
       {
-        heading: "Exceeding Expectations",
-        content:"We strive to exceed your expectations at every step of the way, taking your ideas from conception to realization with style and an incomparable personal touch.",
+        ...t.about?.tabs?.[0],
         svg: "tools",
         src: AbountOne,
-        alt: "Yellow and black heavy equipment on brown grass field",
+        alt: t.about?.tabs?.[0]?.alt || "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Passion for Excellence",
-        content:
-          "At the heart of our company lies an unwavering passion for excellence in wedding and event planning.",
+        ...t.about?.tabs?.[1],
         svg: "dashboard",
         src: AbountTwo,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
+        alt: t.about?.tabs?.[1]?.alt || "A screenshot or graphic representation of the intuitive dashboard",
       },
       {
-        heading: "Unforgettable Moments",
-        content:
-          "At Le Mariage, we take pride in presenting ourselves as your trusted partner in creating unforgettable moments in Cartagena and beyond.",
+        ...t.about?.tabs?.[2],
         svg: "house",
         src: AbountThree,
-        alt: "Gray metal building frame near tower crane during daytime",
+        alt: t.about?.tabs?.[2]?.alt || "Gray metal building frame near tower crane during daytime",
       },
     ]}
   />

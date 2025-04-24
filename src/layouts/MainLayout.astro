@@ -2,6 +2,8 @@
 // Importing necessary components
 import Meta from "@components/Meta.astro";
 import Navbar from "@components/sections/Navbar.astro";
+
+const { t } = Astro.props;
 import WhatsappButton from "@components//WhatsappButton.astro";
 import FooterSection from "@components/sections/FooterSection.astro";
 import { SITE } from "@data/constants";
@@ -13,6 +15,7 @@ const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
 
 // Interface to type-check the properties
 interface Props {
+  t?: any;
   title?: string;
   meta?: string;
   structuredData?: object;
@@ -53,13 +56,13 @@ We set the language of the page to English and add classes for scrollbar and scr
     -->
     <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
       </div>
-      <Navbar />
+      <Navbar t={t} />
       <main>
         <slot />
       </main>
       <WhatsappButton />
     </div>
-    <FooterSection />
+    <FooterSection t={t} />
     <style>
       /* CSS rules for the page scrollbar and scrolling experience with lenis library */
       .scrollbar-hide::-webkit-scrollbar {
