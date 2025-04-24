@@ -34,6 +34,36 @@ const es = {
           heading: "Confianza",
           content: "La transparencia y honestidad son la base de nuestra relación contigo.",
           svg: "shield"
+        },
+        {
+          heading: "Cultura",
+          content: "Abrazamos la rica cultura de Cartagena para que tu celebración sea verdaderamente especial.",
+          svg: "globe"
+        },
+        {
+          heading: "Recuerdos",
+          content: "Te ayudamos a crear recuerdos que durarán toda la vida.",
+          svg: "camera"
+        },
+        {
+          heading: "Tradición",
+          content: "Honramos las tradiciones mientras hacemos tu evento único para ti.",
+          svg: "flag"
+        },
+        {
+          heading: "Ambiente",
+          content: "Creamos el ambiente perfecto para la boda de tus sueños.",
+          svg: "sun"
+        },
+        {
+          heading: "Naturaleza",
+          content: "La belleza natural de Cartagena está presente en cada evento.",
+          svg: "leaf"
+        },
+        {
+          heading: "Aventura",
+          content: "Convierte tu boda en una aventura que nunca olvidarás.",
+          svg: "compass"
         }
       ]
     },
@@ -51,6 +81,22 @@ const es = {
         {
           question: "¿Ayudan con los trámites legales?",
           answer: "Sí, te ayudamos con todos los requisitos legales y de documentación para tu boda."
+        },
+        {
+          question: "¿Trabajan con un presupuesto específico?",
+          answer: "¡Por supuesto! Adaptamos nuestros servicios a tu presupuesto y visión."
+        },
+        {
+          question: "¿Qué pasa si necesito cambiar la fecha de mi boda?",
+          answer: "Trabajaremos contigo para reprogramar y adaptarnos a cualquier cambio en tus planes."
+        },
+        {
+          question: "¿Cómo puedo contactarlos para hablar de los detalles de mi boda en Cartagena?",
+          answer: "Puedes contactarnos por WhatsApp, correo electrónico o nuestro formulario web. ¡Estamos para ayudarte!"
+        },
+        {
+          question: "¿Ofrecen servicios de diseño y decoración?",
+          answer: "Sí, ofrecemos servicios completos de diseño y decoración para que tu boda sea hermosa y única."
         }
       ]
     },

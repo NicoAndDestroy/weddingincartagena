@@ -58,6 +58,36 @@ const en = {
           heading: "Trust",
           content: "Transparency and honesty are the foundation of our relationship with you.",
           svg: "shield"
+        },
+        {
+          heading: "Culture",
+          content: "We embrace the rich culture of Cartagena to make your celebration truly special.",
+          svg: "globe"
+        },
+        {
+          heading: "Memories",
+          content: "We help you create memories that will last a lifetime.",
+          svg: "camera"
+        },
+        {
+          heading: "Tradition",
+          content: "We honor traditions while making your event unique to you.",
+          svg: "flag"
+        },
+        {
+          heading: "Ambience",
+          content: "We craft the perfect ambience for your dream wedding.",
+          svg: "sun"
+        },
+        {
+          heading: "Nature",
+          content: "The beauty of Cartagena’s natural surroundings is part of every event.",
+          svg: "leaf"
+        },
+        {
+          heading: "Adventure",
+          content: "Turn your wedding into an adventure you’ll never forget.",
+          svg: "compass"
         }
       ]
     },
@@ -75,6 +105,22 @@ const en = {
         {
           question: "Do you handle legal paperwork?",
           answer: "Yes, we assist with all legal and documentation requirements for your wedding."
+        },
+        {
+          question: "Do you work with a specific budget?",
+          answer: "Absolutely! We tailor our services to fit your budget and vision."
+        },
+        {
+          question: "What happens if I need to change the date of my wedding?",
+          answer: "We will work with you to reschedule and accommodate any changes to your plans."
+        },
+        {
+          question: "How can I contact you to discuss the details of my wedding in Cartagena?",
+          answer: "You can contact us via WhatsApp, email, or our website contact form. We are here to help!"
+        },
+        {
+          question: "Do you offer design and decoration services?",
+          answer: "Yes, we provide full design and decoration services to make your wedding beautiful and unique."
         }
       ]
     },
