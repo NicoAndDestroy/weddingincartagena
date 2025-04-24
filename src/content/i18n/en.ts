@@ -42,10 +42,45 @@ const en = {
     values: {
       title: "Our Values",
       subTitle: "In a world where trust is invaluable, we commit to being your most reliable partner. Transparency and honesty guide every interaction we have with you.",
-      alt: "About Section of Le Mariage with our values: Passion, Unique memories and trust."
+      alt: "About Section of Le Mariage with our values: Passion, Unique memories and trust.",
+      features: [
+        {
+          heading: "Passion",
+          content: "We are passionate about creating unique and unforgettable experiences for every couple.",
+          svg: "heart"
+        },
+        {
+          heading: "Unique Memories",
+          content: "Every wedding is a story, and we make sure yours is memorable.",
+          svg: "star"
+        },
+        {
+          heading: "Trust",
+          content: "Transparency and honesty are the foundation of our relationship with you.",
+          svg: "shield"
+        }
+      ]
     },
     faq: {
-      title: "Frequently<br />asked questions"
+      title: "Frequently<br />asked questions",
+      faqs: [
+        {
+          question: "What services do you offer?",
+          answer: "We offer comprehensive wedding planning, coordination, and design services in Cartagena."
+        },
+        {
+          question: "How far in advance should I book?",
+          answer: "We recommend booking at least 6-12 months in advance to secure your preferred date."
+        },
+        {
+          question: "Do you handle legal paperwork?",
+          answer: "Yes, we assist with all legal and documentation requirements for your wedding."
+        }
+      ]
+    },
+    footer: {
+      copyright: "©",
+      brand: "Wedding in Cartagena by Le Mariage. All rights reserved."
     },
     contact: {
       title: "Let's Build Your Dream Wedding Together",

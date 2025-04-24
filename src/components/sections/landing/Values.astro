@@ -21,9 +21,9 @@ interface Props {
 }
 // Define props from Astro
 const { t, title, subTitle, features } = Astro.props;
-const sectionTitle = t?.values?.title || title;
-const sectionSubTitle = t?.values?.subTitle || subTitle;
-const sectionFeatures = t?.values?.features || features;
+const sectionTitle = t?.values?.title ?? title;
+const sectionSubTitle = t?.values?.subTitle ?? subTitle;
+const sectionFeatures = t?.values?.features ?? features;
 ---
 
 <section

@@ -18,10 +18,45 @@ const es = {
     values: {
       title: "Nuestros Valores",
       subTitle: "En un mundo donde la confianza es invaluable, nos comprometemos a ser tu socio más confiable. La transparencia y la honestidad guían cada interacción que tenemos contigo.",
-      alt: "Sección sobre los valores de Le Mariage: Pasión, recuerdos únicos y confianza."
+      alt: "Sección sobre los valores de Le Mariage: Pasión, recuerdos únicos y confianza.",
+      features: [
+        {
+          heading: "Pasión",
+          content: "Nos apasiona crear experiencias únicas e inolvidables para cada pareja.",
+          svg: "heart"
+        },
+        {
+          heading: "Recuerdos Únicos",
+          content: "Cada boda es una historia, y nos aseguramos de que la tuya sea memorable.",
+          svg: "star"
+        },
+        {
+          heading: "Confianza",
+          content: "La transparencia y honestidad son la base de nuestra relación contigo.",
+          svg: "shield"
+        }
+      ]
     },
     faq: {
-      title: "Preguntas<br />frecuentes"
+      title: "Preguntas<br />frecuentes",
+      faqs: [
+        {
+          question: "¿Qué servicios ofrecen?",
+          answer: "Ofrecemos servicios integrales de planeación, coordinación y diseño de bodas en Cartagena."
+        },
+        {
+          question: "¿Con cuánta anticipación debo reservar?",
+          answer: "Recomendamos reservar al menos con 6-12 meses de anticipación para asegurar tu fecha preferida."
+        },
+        {
+          question: "¿Ayudan con los trámites legales?",
+          answer: "Sí, te ayudamos con todos los requisitos legales y de documentación para tu boda."
+        }
+      ]
+    },
+    footer: {
+      copyright: "©",
+      brand: "Bodas en Cartagena por Le Mariage. Todos los derechos reservados."
     },
     contact: {
       title: "Construyamos juntos la boda de tus sueños",

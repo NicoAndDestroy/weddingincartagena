@@ -1,14 +1,12 @@
 ---
 // Import the necessary dependencies
 import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
-import enStrings from "@utils/navigation.ts";
-import frStrings from "@utils/fr/navigation.ts";
+
 import BrandLogo from "@components/BrandLogo.astro";
 
 // Get translation prop if passed
 const { t } = Astro.props;
-// Select the correct navigation strings based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
+
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">

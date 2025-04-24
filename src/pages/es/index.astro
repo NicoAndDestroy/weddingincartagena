@@ -43,19 +43,16 @@ const avatarSrcs: Array<string> = [
 
   <AboutSection t={t} />
 
-  <ValuesSection
-    title={t.values?.title || "Nuestros Valores"}
-    subTitle={t.values?.subTitle || "En un mundo donde la confianza es invaluable, nos comprometemos a ser tu socio más confiable. La transparencia y la honestidad guían cada interacción que tenemos contigo."}
-    src={featureImage}
-    alt={t.values?.alt || "Sección sobre los valores de Le Mariage: Pasión, recuerdos únicos y confianza."}
-    features={features}
-  />
+  <ValuesSection t={t} src={featureImage} alt={t.values?.alt} features={features} />
 
-  <FAQ t={t} title={t.faq?.title || "Preguntas frecuentes"} faqs={faqs} />
+  <FAQ t={t} faqs={faqs} />
   <CarouselVert />
 
   <ContactSection
-    title={t.contact?.title || "Construyamos juntos la boda de tus sueños"}
+    title={t.contact?.title}
+    subTitle={t.contact?.subTitle}
+    url={t.contact?.url}
+    alt={t.contact?.alt}
     subTitle={t.contact?.subTitle || "En Le Mariage, no solo creamos eventos, creamos experiencias que duran toda la vida. Confía en nosotros para hacer realidad tus sueños más preciados y transformar cada momento en un recuerdo que atesorarás por siempre."}
     url={t.contact?.url || "https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"}
     alt={t.contact?.alt || "Sección de preguntas frecuentes de Le Mariage con las dudas y respuestas más comunes."}

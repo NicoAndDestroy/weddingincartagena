@@ -4,9 +4,8 @@ import AccordionItem from "@components/ui/blocks/AccordionItem.astro";
 
 // Define props from Astro
 const { t, title, faqs } = Astro.props;
-const sectionTitle = t?.faq?.title || title;
-// Support both array and object with faqs property
-let sectionFaqs = t?.faq?.faqs || faqs;
+const sectionTitle = t?.faq?.title;
+let sectionFaqs = t?.faq?.faqs ?? faqs;
 if (sectionFaqs && !Array.isArray(sectionFaqs) && Array.isArray(sectionFaqs.faqs)) {
   sectionFaqs = sectionFaqs.faqs;
 }
