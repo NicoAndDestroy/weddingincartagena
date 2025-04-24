@@ -5,7 +5,9 @@ import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
 import BrandLogo from "@components/BrandLogo.astro";
 
-// Select the correct translation based on the page's lang prop:
+// Get translation prop if passed
+const { t } = Astro.props;
+// Select the correct navigation strings based on the page's lang prop:
 const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
 ---
 
@@ -52,7 +54,7 @@ const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span> Wedding in Cartagena by Le Mariage. All rights reserved.
+          {t?.footer?.copyright || '© '}<span id="current-year"></span> {t?.footer?.brand || 'Wedding in Cartagena by Le Mariage. All rights reserved.'}
         </p>
       </div>
 

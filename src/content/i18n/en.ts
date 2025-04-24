@@ -1,4 +1,12 @@
 const en = {
+  navBarLinks: [
+    { url: '/', name: 'Home' },
+    { url: '/#about', name: 'About' },
+    { url: '/#values', name: 'Our Values' },
+    { url: '/#faq', name: 'FAQ' },
+    { url: '/#contact', name: 'Contact' },
+  ],
+  brand: 'Le Mariage',
     hero: {
       title: `Your Dream Wedding in <span class="text-yellow-500 dark:text-yellow-400">Cartagena </span> Colombia`,
       subTitle: `At <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span> we make your dreams come true in Cartagena. With passion and dedication, we help you create unforgettable memories for your wedding or event. Contact us and start today!`,
@@ -6,6 +14,30 @@ const en = {
       rating: `<span class="font-bold">4.8</span> / 5`,
       reviews: `From Over <span class="font-bold">12.8k</span> Reviews`,
       alt: "Le Mariage home page, Weddings in Cartagena, events in Cartagena so you can schedule your dream wedding"
+    },
+    about: {
+      title: "About Us",
+      subTitle: `Welcome to our <span class=\"text-yellow-500 dark:text-yellow-400\">family</span> in the world of dreams come true!`,
+      tabs: [
+        {
+          heading: "Exceeding Expectations",
+          content: "We strive to exceed your expectations at every step, taking your ideas from conception to realization with style and an incomparable personal touch.",
+          svg: "tools",
+          alt: "Yellow and black heavy equipment on brown grass field"
+        },
+        {
+          heading: "Passion for Excellence",
+          content: "At the heart of our company lies an unwavering passion for excellence in wedding and event planning.",
+          svg: "dashboard",
+          alt: "A screenshot or graphic representation of the intuitive dashboard"
+        },
+        {
+          heading: "Unforgettable Moments",
+          content: "At Le Mariage, we take pride in presenting ourselves as your trusted partner in creating unforgettable moments in Cartagena and beyond.",
+          svg: "house",
+          alt: "Gray metal building frame near tower crane during daytime"
+        }
+      ]
     },
     values: {
       title: "Our Values",
