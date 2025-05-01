@@ -95,7 +95,7 @@ const es = {
           links: [
             { name: "contact@weddingincartagena.com", url: "mailto:contact@weddingincartagena.com" },
             { name: "+57 322 694 3874", url: "tel:+573226943874" },
-            { name: "Cartagena, Colombia", url: "https://goo.gl/maps/9E3e6Yx7qJbKjK5u7" }
+            { name: "Cartagena, Colombia", url: "https://www.google.com/maps/place/Cartagena,+Cartagena+Province,+Bolivar/@10.4001987,-75.5085254,13z/data=!3m1!4b1!4m6!3m5!1s0x8ef625e7ae9d1351:0xb161392e033f26ca!8m2!3d10.3932277!4d-75.4832311!16zL20vMGg0NW4?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" }
           ]
         },
         {
@@ -109,9 +109,9 @@ const es = {
         {
           section: "Social",
           links: [
-            { name: "Instagram", url: "https://instagram.com/lemariagecartagena" },
-            { name: "Facebook", url: "https://facebook.com/lemariagecartagena" },
-            { name: "Tiktok", url: "https://tiktok.com/@lemariagecartagena" }
+            { name: "Instagram", url: "https://www.instagram.com/lemariagectg_weddingplanner/?locale=es_LA&hl=pt-br alt=" },
+            { name: "Facebook", url: "https://facebook.com/" },
+            { name: "Tiktok", url: "https://tiktok.com/" }
           ]
         }
       ]
