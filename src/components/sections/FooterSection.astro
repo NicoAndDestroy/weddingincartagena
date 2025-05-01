@@ -1,7 +1,6 @@
 ---
 // Import the necessary dependencies
 import FooterSocialLink from "@components/ui/links/FooterSocialLink.astro";
-
 import BrandLogo from "@components/BrandLogo.astro";
 
 // Get translation prop if passed
@@ -26,7 +25,7 @@ const { t } = Astro.props;
         <ul class="space-y-1">
           {section.links.map((link: any) => (
             <li>
-              <a href={link.url} class="text-neutral-600 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400 transition-colors duration-200">
+              <a href={link.url} target="_blank" rel="noopener noreferrer" class="text-neutral-600 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400 transition-colors duration-200">
                 {link.name}
               </a>
             </li>
@@ -62,11 +61,11 @@ const { t } = Astro.props;
           <img class="w-[26px]" src="/icons/facebook.svg" alt="Social Facebook Le Mariage" />
         </FooterSocialLink>
 
-        <FooterSocialLink url="https://instagram.com/lemariagecartagena">
+        <FooterSocialLink url="https://www.instagram.com/lemariagectg_weddingplanner/">
           <img class="w-[26px]" src="/icons/instagram.svg" alt="Social Instagram Le Mariage" />
         </FooterSocialLink>
 
-        <FooterSocialLink url="https://tiktok.com/@lemariagecartagena">
+        <FooterSocialLink url="https://tiktok.com/">
           <img class="w-[26px]" src="/icons/tiktok.svg" alt="Social Tiktok Le Mariage" />
         </FooterSocialLink>
       </div>
