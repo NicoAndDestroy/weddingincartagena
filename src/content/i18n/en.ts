@@ -135,7 +135,7 @@ const en = {
           links: [
             { name: "Instagram", url: "https://www.instagram.com/lemariagectg_weddingplanner/?locale=es_LA&hl=pt-br alt=" },
             { name: "Facebook", url: "https://facebook.com/" },
-            { name: "Tiktok", url: "https://www.tiktok.com/@le.mariage.ctg?_t=ZS-8vyu6Nbspzs&_r=1/" }
+            { name: "Tiktok", url: "https://www.tiktok.com/@le.mariage.ctg?_t=8oY2o06BPwD&_r=1" }
           ]
         }
       ]
