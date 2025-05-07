@@ -111,7 +111,7 @@ const es = {
           links: [
             { name: "Instagram", url: "https://instagram.com/lemariagecartagena" },
             { name: "Facebook", url: "https://facebook.com/lemariagecartagena" },
-            { name: "Tiktok", url: "https://tiktok.com/@lemariagecartagena" }
+            { name: "Tiktok", url: "https://www.tiktok.com/@le.mariage.ctg?_t=8oY2o06BPwD&_r=1" }
           ]
         }
       ]
