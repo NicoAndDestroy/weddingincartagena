@@ -1,11 +1,11 @@
 ---
 const reviews = [
-  { author: "Ana López", text: "¡Excelente servicio y calidad!", image: "/src/images/values/vertical/values_*.jpg", rating: 5 },
-  { author: "Carlos Pérez", text: "Muy satisfecho con mi compra.", image: "/images/review2.jpg", rating: 5 },
-  { author: "Laura Méndez", text: "Atención al cliente impecable.", image: "/images/review3.jpg", rating: 5 },
-  { author: "Juan Torres", text: "Entrega rápida y producto premium.", image: "/images/review4.jpg", rating: 5 },
-  { author: "María Rodríguez", text: "Volvería a comprar sin dudarlo.", image: "/images/review5.jpg", rating: 5 },
-  { author: "Luis Gómez", text: "Todo fue perfecto de principio a fin.", image: "/images/review6.jpg", rating: 5 },
+  { author: "Ana López", text: "¡Excelente servicio y calidad!", image: "/src/images/review/review1.jpg", rating: 5 },
+  { author: "Carlos Pérez", text: "Muy satisfecho con mi compra.", image: "/src/images/review/review2.jpg", rating: 5 },
+  { author: "Laura Méndez", text: "Atención al cliente impecable.", image: "/src/images/review/review3.jpg", rating: 5 },
+  { author: "Juan Torres", text: "Entrega rápida y producto premium.", image: "/src/images/review/review4.jpg", rating: 5 },
+  { author: "María Rodríguez", text: "Volvería a comprar sin dudarlo.", image: "/src/images/review/review5.jpg", rating: 5 },
+  { author: "Luis Gómez", text: "Todo fue perfecto de principio a fin.", image: "/src/images/review/review6.jpg", rating: 5 },
 ];
 ---
 
@@ -34,7 +34,10 @@ const reviews = [
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   font-size: 1rem;
-  background: #363636
+  background: #363636;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente si hay altura fija */
+  text-align: center;
 }
 
 .review-author {
@@ -77,7 +80,9 @@ button:hover {
   height: 4rem;
   border-radius: 9999px;
   object-fit: cover;
+  object-position: top-center;
   margin-bottom: 1rem;
+  
 }
 .p {
   color: #E5E5DB;
@@ -88,6 +93,8 @@ button:hover {
   display: flex;
   gap: 0.2rem;
   margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .star {
