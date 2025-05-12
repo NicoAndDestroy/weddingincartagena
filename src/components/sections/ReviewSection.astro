@@ -1,6 +1,6 @@
 ---
 const reviews = [
-  { author: "Ana López", text: "¡Excelente servicio y calidad!", image: "/images/review/review1.jpg", rating: 5 },
+  { author: "Ana López", text: "¡Excelente servicio y calidad!", image: "/src/images/values/vertical/values_*.jpg", rating: 5 },
   { author: "Carlos Pérez", text: "Muy satisfecho con mi compra.", image: "/images/review2.jpg", rating: 5 },
   { author: "Laura Méndez", text: "Atención al cliente impecable.", image: "/images/review3.jpg", rating: 5 },
   { author: "Juan Torres", text: "Entrega rápida y producto premium.", image: "/images/review4.jpg", rating: 5 },
@@ -99,8 +99,6 @@ button:hover {
   color: #E1BA8E; /* dorado */
 }
 
-
-
 @media (min-width: 640px) {
   .review-slider {
     grid-auto-columns: 50%;
@@ -126,7 +124,6 @@ button:hover {
         </div>
         <div class="review-author">— {review.author}</div>
         <p class="p" id="review-text">{review.text}</p>
-        
       </div>
     ))}
   </div>
