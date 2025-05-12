@@ -1,0 +1,143 @@
+---
+const reviews = [
+  { author: "Ana López", text: "¡Excelente servicio y calidad!", image: "/images/review1.jpg" },
+  { author: "Carlos Pérez", text: "Muy satisfecho con mi compra.", image: "/images/review2.jpg" },
+  { author: "Laura Méndez", text: "Atención al cliente impecable.", image: "/images/review3.jpg" },
+  { author: "Juan Torres", text: "Entrega rápida y producto premium.", image: "/images/review4.jpg" },
+  { author: "María Rodríguez", text: "Volvería a comprar sin dudarlo.", image: "/images/review5.jpg" },
+  { author: "Luis Gómez", text: "Todo fue perfecto de principio a fin.", image: "/images/review6.jpg" },
+];
+---
+
+<style>
+.review-section {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  background: #363636;
+}
+
+.review-slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 1rem;
+  transition: transform 0.5s ease;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+
+}
+
+.review {
+  background: ;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  background: #E5E5DB
+}
+
+.review-author {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #E5E5DB;
+}
+
+.controls {
+  display: flex;
+  justify-content:space-around ;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #262626;
+}
+
+.review-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+
+@media (min-width: 640px) {
+  .review-slider {
+    grid-auto-columns: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-slider {
+    grid-auto-columns: 25%;
+  }
+}
+</style>
+
+<section class="review-section">
+  <div class="review-slider" id="reviewSlider">
+    {reviews.map((review) => (
+      <div class="review">
+        <img src={review.image} alt={`Foto de ${review.author}`} class="review-image" />
+        <p>{review.text}</p>
+        <div class="review-author">— {review.author}</div>
+      </div>
+    ))}
+  </div>
+
+  <div class="controls">
+    <button type="button" onclick="prevSlide()">‹</button>
+    <button type="button" onclick="nextSlide()">›</button>
+
+  </div>
+
+  <script is:inline>
+    let currentIndex = 0;
+
+    const getSlidesPerView = () => {
+      if (window.innerWidth >= 1024) return 4;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    };
+
+    const updateSlider = () => {
+      const slider = document.getElementById('reviewSlider');
+      const slidesPerView = getSlidesPerView();
+      const offset = (100 / slidesPerView) * currentIndex;
+      slider.style.transform = `translateX(-${offset}%)`;
+    };
+
+    const nextSlide = () => {
+      const slider = document.getElementById('reviewSlider');
+      const totalSlides = slider.children.length;
+      const slidesPerView = getSlidesPerView();
+      currentIndex = (currentIndex + 1) % (totalSlides - slidesPerView + 1);
+      updateSlider();
+    };
+
+    const prevSlide = () => {
+      const slider = document.getElementById('reviewSlider');
+      const totalSlides = slider.children.length;
+      const slidesPerView = getSlidesPerView();
+      currentIndex = (currentIndex - 1 + (totalSlides - slidesPerView + 1)) % (totalSlides - slidesPerView + 1);
+      updateSlider();
+    };
+
+    window.addEventListener('resize', updateSlider);
+    setInterval(nextSlide, 5000);
+    updateSlider();
+  </script>
+</section>

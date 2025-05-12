@@ -5,6 +5,7 @@ const es = {
     { url: '/es#values', name: 'Nuestros Valores' },
     { url: '/es#faq', name: 'Preguntas Frecuentes' },
     { url: '/es#contact', name: 'Contacto' },
+    { url: '/es#reviews', name: 'Reseñas' },
   ],
   brand: 'Le Mariage',
     hero: {
