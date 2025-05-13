@@ -1,11 +1,11 @@
 ---
 const reviews = [
-  { author: "Ana López", text: "¡Excelente servicio y calidad!", image: "/src/images/review/review1.jpg", rating: 5 },
-  { author: "Carlos Pérez", text: "Muy satisfecho con mi compra.", image: "/src/images/review/review2.jpg", rating: 5 },
-  { author: "Laura Méndez", text: "Atención al cliente impecable.", image: "/src/images/review/review3.jpg", rating: 5 },
-  { author: "Juan Torres", text: "Entrega rápida y producto premium.", image: "/src/images/review/review4.jpg", rating: 5 },
-  { author: "María Rodríguez", text: "Volvería a comprar sin dudarlo.", image: "/src/images/review/review5.jpg", rating: 5 },
-  { author: "Luis Gómez", text: "Todo fue perfecto de principio a fin.", image: "/src/images/review/review6.jpg", rating: 5 },
+  { author: "Anita Yang", text: "Gracias por organizar el evento, el equipo estaba muy feliz y tomamos muchos cocteles!", image: "/src/images/review/review1.jpg", rating: 5 },
+  { author: "Peter y Renan", text: "Gracias Tatiana, ¡no podríamos haber pedido una mejor organizadora de bodas! Nos hiciste sentir muy especiales y cómodos durante todo el tiempo que trabajamos contigo. ¡Estamos eternamente agradecidos por ti y todo tu equipo! ❤️", image: "/src/images/review/PeterRenanreview.jpg", rating: 5 },
+  { author: "Maria José Bonilla", text: "Hola Tati, ¿Cómo estás? ¡Mira que hasta hoy he recibido mensajes felicitándome por lo hermoso que estuvo todo, toda la familia de mi esposo quedo demasiado sorprendida para superbién, me han dicho que es la mejor boda a la que han asistido!! ¡Yo de verdad que quede más que satisfecha con tu trabajo, superaste completamente mis expectativas!!1 fue la boda de nuestros sueños, muchas gracias por todo!!!", image: "/src/images/review/Mariabonillareview.jpg", rating: 5 },
+  { author: "Hannah Catherine", text: "Tatiana, ahora que hemos tenido tiempo de recuperarnos con nuestras familias, queríamos agradecerte enormemente todo lo que hiciste por nosotros. No solo el viernes, sino también los 12 meses anteriores. Fuiste tan paciente, tan adaptable y tan organizada que mantuviste nuestra planificación al día y realmente pensaste en todo. Además, fue muy fácil conocerte, y tu humor y tu disposición fueron fundamentales para hacernos sentir tan felices y seguros el día de nuestra boda de que todo saldría perfecto.Mi familia no para de hablar de lo fantástica que fuiste el viernes.", image: "/src/images/review/Hannareview.jpg", rating: 5 },
+  { author: "María Rodríguez", text: "Volvería a comprar sin dudarlo.", image: "/src/images/review/review1.jpg", rating: 5 },
+  { author: "Luis Gómez", text: "Todo fue perfecto de principio a fin.", image: "/src/images/review/review1.jpg", rating: 5 },
 ];
 ---
 
@@ -35,8 +35,8 @@ const reviews = [
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   font-size: 1rem;
   background: #363636;
-  align-items: center; /* Centra horizontalmente */
-  justify-content: center; /* Centra verticalmente si hay altura fija */
+  align-items: center; 
+  justify-content: center; 
   text-align: center;
 }
 
@@ -44,6 +44,8 @@ const reviews = [
   margin-top: 1rem;
   font-weight: bold;
   color: #E5E5DB;
+  margin-bottom: 0.5rem;
+  margin-top: 0.0rem;
 }
 
 .controls {
@@ -77,6 +79,7 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.0rem;
 }
 .p {
   color: #E5E5DB;
@@ -89,6 +92,7 @@ button:hover {
   margin-bottom: 0.5rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0.0rem;
 }
 
 .star {
@@ -168,7 +172,7 @@ button:hover {
     };
 
     window.addEventListener('resize', updateSlider);
-    setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 8000);
     updateSlider();
   </script>
 </section>
