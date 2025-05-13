@@ -14,7 +14,6 @@ const reviews = [
   position: relative;
   overflow: hidden;
   padding: 2rem 1rem;
-  background: #262626;
 }
 
 .review-slider {
@@ -25,19 +24,17 @@ const reviews = [
   transition: transform 0.5s ease;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
-
 }
 
 .review {
-  background: ;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  font-size: 1rem;
-  background: #363636;
-  align-items: center; 
-  justify-content: center; 
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .review-author {
@@ -46,6 +43,7 @@ const reviews = [
   color: #E5E5DB;
   margin-bottom: 0.5rem;
   margin-top: 0.0rem;
+  font-size: 1.3rem;
 }
 
 .controls {
@@ -71,37 +69,33 @@ button:hover {
 }
 
 .review-image {
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 9999px;
   object-fit: cover;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
   margin-bottom: 0.0rem;
 }
 .p {
-  color: #E5E5DB;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem 0;
 }
 .stars {
   display: flex;
   gap: 0.2rem;
-  margin-bottom: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.0rem;
+  font-size: 1rem;
+  margin: 0.0rem 0;
+  margin-top: 0.0rem;
 }
-
 .star {
   color: #555;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .star.filled {
-  color: #E1BA8E; /* dorado */
+  color: #E1BA8E;
 }
 
 @media (min-width: 640px) {
@@ -120,7 +114,7 @@ button:hover {
 <section class="review-section">
   <div class="review-slider" id="reviewSlider">
     {reviews.map((review) => (
-      <div class="review">
+      <div class="review   bg-neutral-100 dark:bg-white/[.075]">
         <img src={review.image} alt={`Foto de ${review.author}`} class="review-image" />
         <div class="stars">
         {Array.from({ length: 5 }).map((_, i) => (
@@ -128,7 +122,7 @@ button:hover {
         ))}
         </div>
         <div class="review-author">— {review.author}</div>
-        <p class="p" id="review-text">{review.text}</p>
+        <p class=" p text-neutral-800 dark:text-neutral-200" id="review-text">{review.text}</p>
       </div>
     ))}
   </div>
