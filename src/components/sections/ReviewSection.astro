@@ -1,12 +1,30 @@
 ---
-const reviews = [
-  { author: "Anita Yang", text: "Gracias por organizar el evento, el equipo estaba muy feliz y tomamos muchos cocteles!", image: "/src/images/review/review1.jpg", rating: 5 },
-  { author: "Peter y Renan", text: "Gracias Tatiana, ¡no podríamos haber pedido una mejor organizadora de bodas! Nos hiciste sentir muy especiales y cómodos durante todo el tiempo que trabajamos contigo. ¡Estamos eternamente agradecidos por ti y todo tu equipo! ❤️", image: "/src/images/review/PeterRenanreview.jpg", rating: 5 },
-  { author: "Maria José Bonilla", text: "Hola Tati, ¿Cómo estás? ¡Mira que hasta hoy he recibido mensajes felicitándome por lo hermoso que estuvo todo, toda la familia de mi esposo quedo demasiado sorprendida para superbién, me han dicho que es la mejor boda a la que han asistido!! ¡Yo de verdad que quede más que satisfecha con tu trabajo, superaste completamente mis expectativas!!1 fue la boda de nuestros sueños, muchas gracias por todo!!!", image: "/src/images/review/Mariabonillareview.jpg", rating: 5 },
-  { author: "Hannah Catherine", text: "Tatiana, ahora que hemos tenido tiempo de recuperarnos con nuestras familias, queríamos agradecerte enormemente todo lo que hiciste por nosotros. No solo el viernes, sino también los 12 meses anteriores. Fuiste tan paciente, tan adaptable y tan organizada que mantuviste nuestra planificación al día y realmente pensaste en todo. Además, fue muy fácil conocerte, y tu humor y tu disposición fueron fundamentales para hacernos sentir tan felices y seguros el día de nuestra boda de que todo saldría perfecto.Mi familia no para de hablar de lo fantástica que fuiste el viernes.", image: "/src/images/review/Hannareview.jpg", rating: 5 },
-  { author: "María Rodríguez", text: "Volvería a comprar sin dudarlo.", image: "/src/images/review/review1.jpg", rating: 5 },
-  { author: "Luis Gómez", text: "Todo fue perfecto de principio a fin.", image: "/src/images/review/review1.jpg", rating: 5 },
-];
+import * as enTranslations from '../../content/i18n/en';
+import * as esTranslations from '../../content/i18n/es';
+
+interface Review {
+  author: string;
+  text: string;
+  image: string;
+  rating: number;
+}
+
+interface ReviewsSection {
+  title: string;
+  photoAltPrefix: string;
+  items: Review[];
+}
+
+const { currentLocale } = Astro;
+const locale = currentLocale || 'en';
+
+// Get translations based on locale
+const translations = locale === 'en' ? enTranslations.default : esTranslations.default;
+const { reviews } = translations;
+
+// Get the base URL based on locale
+const baseUrl = locale === 'en' ? '' : '/es';
+
 ---
 
 <style>
@@ -111,11 +129,12 @@ button:hover {
 }
 </style>
 
-<section class="review-section">
+<section id="reviews" class="review-section">
+  <h2 class="text-center text-3xl font-bold mb-8 text-neutral-800 dark:text-neutral-200">{reviews.title}</h2>
   <div class="review-slider" id="reviewSlider">
-    {reviews.map((review) => (
+    {reviews.items.map((review: Review) => (
       <div class="review   bg-neutral-100 dark:bg-white/[.075]">
-        <img src={review.image} alt={`Foto de ${review.author}`} class="review-image" />
+        <img src={review.image} alt={`${reviews.photoAltPrefix} ${review.author}`} class="review-image" />
         <div class="stars">
         {Array.from({ length: 5 }).map((_, i) => (
         <span class={i < review.rating ? 'star filled' : 'star'}>★</span>

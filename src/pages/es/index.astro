@@ -12,6 +12,7 @@ import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import featureImage from "@images/features-image.avif";
+import ReviewSection from "@/components/sections/ReviewSection.astro";
 
 // Traducción
 import es from "@/content/i18n/es";
@@ -42,6 +43,7 @@ const avatarSrcs: Array<string> = [
   />
 
   <AboutSection t={t} />
+  <ReviewSection/>
 
   <ValuesSection t={t} src={featureImage} alt={t.values?.alt} features={features} />
 
