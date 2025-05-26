@@ -125,7 +125,7 @@ const es = {
         {
           author: "Anita Yang",
           text: "Gracias por organizar el evento, el equipo estaba muy feliz y tomamos muchos cocteles!",
-          image: "/src/images/review/review1.jpg",
+          image: "/src/images/review/ana-review-better.jpg",
           rating: 5
         },
         {
@@ -147,17 +147,11 @@ const es = {
           rating: 5
         },
         {
-          author: "María Rodríguez",
-          text: "Volvería a comprar sin dudarlo.",
-          image: "/src/images/review/review1.jpg",
+          author: "Alejandra Fandiño",
+          text: "¡Tuvimos una boda increíble gracias a Le Mariage Cartagena! Todo estuvo impecablemente organizado, sin estrés y realmente mágico. El equipo fue profesional, atento e hizo que nuestro día fuera inolvidable. ¡Muy recomendable! ♥️✨",
+          image: "/src/images/review/alejandra-review.png",
           rating: 5
         },
-        {
-          author: "Luis Gómez",
-          text: "Todo fue perfecto de principio a fin.",
-          image: "/src/images/review/review1.jpg",
-          rating: 5
-        }
       ]
     },
 
