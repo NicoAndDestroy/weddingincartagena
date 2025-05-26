@@ -3,11 +3,12 @@ const es = {
     { url: '/es', name: 'Inicio' },
     { url: '/es#about', name: 'Sobre Nosotros' },
     { url: '/es#values', name: 'Nuestros Valores' },
+    { url: '/es#reviews', name: 'Reseñas' },
     { url: '/es#faq', name: 'Preguntas Frecuentes' },
     { url: '/es#contact', name: 'Contacto' },
   ],
   brand: 'Le Mariage',
-    hero: {
+  hero: {
       title: "Tu Boda de Ensueño en Cartagena, Colombia",
       subTitle: `En <span class=\"text-yellow-500 dark:text-yellow-400\">Le Mariage</span> hacemos realidad tus sueños en Cartagena. Con pasión y dedicación, te ayudamos a crear recuerdos inolvidables para tu boda o evento. ¡Contáctanos y comienza hoy!`,
       cta: "Contáctanos",
@@ -15,7 +16,7 @@ const es = {
       reviews: `De más de <span class=\"font-bold\">12.8k</span> opiniones`,
       alt: "Página principal de Le Mariage, Bodas en Cartagena, eventos en Cartagena para que puedas programar la boda de tus sueños"
     },
-    values: {
+  values: {
       title: "Nuestros Valores",
       subTitle: "En un mundo donde la confianza es invaluable, nos comprometemos a ser tu socio más confiable. La transparencia y la honestidad guían cada interacción que tenemos contigo.",
       alt: "Sección sobre los valores de Le Mariage: Pasión, recuerdos únicos y confianza.",
@@ -52,7 +53,7 @@ const es = {
         }
       ]
     },
-    faq: {
+  faq: {
       title: "Preguntas frecuentes",
       subTitle: "Pregúntenos cualquier cosa sobre nuestra marca y servicios y obtenga una respuesta inmediata.",  
       faqs: [
@@ -86,7 +87,7 @@ const es = {
         }
       ]
     },
-    footer: {
+  footer: {
       copyright: "©",
       brand: "Bodas en Cartagena por Le Mariage. Todos los derechos reservados.",
       links: [
@@ -103,6 +104,7 @@ const es = {
           links: [
             { name: "Sobre Nosotros", url: "/es#about" },
             { name: "Nuestros Valores", url: "/es#values" },
+            { name: "Reseñas", url: "/es#reviews" },
             { name: "Preguntas Frecuentes", url: "/es#faq" }
           ]
         },
@@ -116,13 +118,50 @@ const es = {
         }
       ]
     },
-    contact: {
+  reviews: {
+      title: "Lo que dicen nuestros clientes",
+      photoAltPrefix: "Foto de",
+      items: [
+        {
+          author: "Anita Yang",
+          text: "Gracias por organizar el evento, el equipo estaba muy feliz y tomamos muchos cocteles!",
+          image: "/src/images/review/ana-review-better.jpg",
+          rating: 5
+        },
+        {
+          author: "Peter y Renan",
+          text: "Gracias Tatiana, ¡no podríamos haber pedido una mejor organizadora de bodas! Nos hiciste sentir muy especiales y cómodos durante todo el tiempo que trabajamos contigo. ¡Estamos eternamente agradecidos por ti y todo tu equipo! ❤️",
+          image: "/src/images/review/PeterRenanreview.jpg",
+          rating: 5
+        },
+        {
+          author: "Maria José Bonilla",
+          text: "Hola Tati, ¿Cómo estás? ¡Mira que hasta hoy he recibido mensajes felicitándome por lo hermoso que estuvo todo, toda la familia de mi esposo quedo demasiado sorprendida para superbién, me han dicho que es la mejor boda a la que han asistido!! ¡Yo de verdad que quede más que satisfecha con tu trabajo, superaste completamente mis expectativas!!1 fue la boda de nuestros sueños, muchas gracias por todo!!!",
+          image: "/src/images/review/Mariabonillareview.jpg",
+          rating: 5
+        },
+        {
+          author: "Hannah Catherine",
+          text: "Tatiana, ahora que hemos tenido tiempo de recuperarnos con nuestras familias, queríamos agradecerte enormemente todo lo que hiciste por nosotros. No solo el viernes, sino también los 12 meses anteriores. Fuiste tan paciente, tan adaptable y tan organizada que mantuviste nuestra planificación al día y realmente pensaste en todo. Además, fue muy fácil conocerte, y tu humor y tu disposición fueron fundamentales para hacernos sentir tan felices y seguros el día de nuestra boda de que todo saldría perfecto. Mi familia no para de hablar de lo fantástica que fuiste el viernes.",
+          image: "/src/images/review/Hannareview.jpg",
+          rating: 5
+        },
+        {
+          author: "Alejandra Fandiño",
+          text: "¡Tuvimos una boda increíble gracias a Le Mariage Cartagena! Todo estuvo impecablemente organizado, sin estrés y realmente mágico. El equipo fue profesional, atento e hizo que nuestro día fuera inolvidable. ¡Muy recomendable! ♥️✨",
+          image: "/src/images/review/alejandra-review.png",
+          rating: 5
+        },
+      ]
+    },
+
+  contact: {
       title: "Construyamos juntos la boda de tus sueños",
       subTitle: "En Le Mariage, no solo creamos eventos, creamos experiencias que duran toda la vida. Confía en nosotros para hacer realidad tus sueños más preciados y transformar cada momento en un recuerdo que atesorarás por siempre.",
       url: "https://wa.me/573226943874?text=Hola%2C%20soy%20Tatiana%20y%20ser%C3%A9%20tu%20planeadora%20de%20bodas%20en%20Cartagena.%20Estoy%20aqu%C3%AD%20para%20ayudarte%20a%20hacer%20realidad%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os.%20Escr%C3%ADbeme%20para%20conocer%20todos%20los%20detalles%20y%20agendar%20una%20llamada%20personalizada.",
       alt: "Sección de preguntas frecuentes de Le Mariage con las dudas y respuestas más comunes."
     },
-    about: {
+  about: {
       title: "Sobre Nosotros",
       subTitle: `¡Bienvenidos a nuestra <span class="text-yellow-500 dark:text-yellow-400">familia</span> en el mundo donde los sueños se hacen realidad!`,
       tabs: [

@@ -11,6 +11,7 @@ import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import featureImage from "@images/features-image.avif";
+import ReviewSection from "@/components/sections/ReviewSection.astro";
 
 // Traducción
 import en from "@/content/i18n/en";
@@ -44,6 +45,9 @@ const avatarSrcs: Array<string> = [
 
   
   <AboutSection t={t} />
+
+  <ReviewSection/>
+
 
   <ValuesSection t={t} src={featureImage} alt={t.values?.alt || "About Section of Le Mariage with our values: Passion, Unique memories and trust."} features={features} />
 

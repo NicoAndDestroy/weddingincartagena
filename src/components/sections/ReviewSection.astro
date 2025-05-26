@@ -1,0 +1,191 @@
+---
+import * as enTranslations from '../../content/i18n/en';
+import * as esTranslations from '../../content/i18n/es';
+
+interface Review {
+  author: string;
+  text: string;
+  image: string;
+  rating: number;
+}
+
+interface ReviewsSection {
+  title: string;
+  photoAltPrefix: string;
+  items: Review[];
+}
+
+const { currentLocale } = Astro;
+const locale = currentLocale || 'en';
+
+// Get translations based on locale
+const translations = locale === 'en' ? enTranslations.default : esTranslations.default;
+const { reviews } = translations;
+
+// Get the base URL based on locale
+const baseUrl = locale === 'en' ? '' : '/es';
+
+---
+
+<style>
+.review-section {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.review-slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 1rem;
+  transition: transform 0.5s ease;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+}
+
+.review {
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review-author {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #E5E5DB;
+  margin-bottom: 0.5rem;
+  margin-top: 0.0rem;
+  font-size: 1.3rem;
+}
+
+.controls {
+  display: flex;
+  justify-content:space-around ;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #262626;
+}
+
+.review-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin: 0;
+  margin-bottom: 0.0rem;
+}
+.p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem 0;
+}
+.stars {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 1rem;
+  margin: 0.0rem 0;
+  margin-top: 0.0rem;
+}
+.star {
+  color: #555;
+  font-size: 1.4rem;
+}
+
+.star.filled {
+  color: #E1BA8E;
+}
+
+@media (min-width: 640px) {
+  .review-slider {
+    grid-auto-columns: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-slider {
+    grid-auto-columns: 25%;
+  }
+}
+</style>
+
+<section id="reviews" class="review-section">
+  <h2 class="text-center text-3xl font-bold mb-8 text-neutral-800 dark:text-neutral-200">{reviews.title}</h2>
+  <div class="review-slider" id="reviewSlider">
+    {reviews.items.map((review: Review) => (
+      <div class="review   bg-neutral-100 dark:bg-white/[.075]">
+        <img src={review.image} alt={`${reviews.photoAltPrefix} ${review.author}`} class="review-image" />
+        <div class="stars">
+        {Array.from({ length: 5 }).map((_, i) => (
+        <span class={i < review.rating ? 'star filled' : 'star'}>★</span>
+        ))}
+        </div>
+        <div class="review-author text-neutral-900 dark:text-neutral-200">— {review.author}</div>
+        <p class="p text-neutral-600 dark:text-neutral-300">— {review.text}</p>
+      </div>
+    ))}
+  </div>
+
+  <div class="controls">
+    <button type="button" onclick="prevSlide()">‹</button>
+    <button type="button" onclick="nextSlide()">›</button>
+
+  </div>
+
+  <script is:inline>
+    let currentIndex = 0;
+
+    const getSlidesPerView = () => {
+      if (window.innerWidth >= 1024) return 4;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    };
+
+    const updateSlider = () => {
+      const slider = document.getElementById('reviewSlider');
+      const slidesPerView = getSlidesPerView();
+      const offset = (100 / slidesPerView) * currentIndex;
+      slider.style.transform = `translateX(-${offset}%)`;
+    };
+
+    const nextSlide = () => {
+      const slider = document.getElementById('reviewSlider');
+      const totalSlides = slider.children.length;
+      const slidesPerView = getSlidesPerView();
+      currentIndex = (currentIndex + 1) % (totalSlides - slidesPerView + 1);
+      updateSlider();
+    };
+
+    const prevSlide = () => {
+      const slider = document.getElementById('reviewSlider');
+      const totalSlides = slider.children.length;
+      const slidesPerView = getSlidesPerView();
+      currentIndex = (currentIndex - 1 + (totalSlides - slidesPerView + 1)) % (totalSlides - slidesPerView + 1);
+      updateSlider();
+    };
+
+    window.addEventListener('resize', updateSlider);
+    setInterval(nextSlide, 8000);
+    updateSlider();
+  </script>
+</section>

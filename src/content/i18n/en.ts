@@ -3,6 +3,7 @@ const en = {
     { url: '/', name: 'Home' },
     { url: '/#about', name: 'About' },
     { url: '/#values', name: 'Our Values' },
+    { url: '/#reviews', name: 'Reviews' },
     { url: '/#faq', name: 'FAQ' },
     { url: '/#contact', name: 'Contact' },
   ],
@@ -127,6 +128,7 @@ const en = {
           links: [
             { name: "About Us", url: "/#about" },
             { name: "Our Values", url: "/#values" },
+            { name: "Reviews", url: "/#reviews" },
             { name: "FAQs", url: "/#faq" }
           ]
         },
@@ -140,6 +142,43 @@ const en = {
         }
       ]
     },
+    reviews: {
+      title: "What Our Clients Say",
+      photoAltPrefix: "Photo of",
+      items: [
+        {
+          author: "Anita Yang",
+          text: "Thank you for organizing the event, the team was very happy and we had many cocktails!",
+          image: "/src/images/review/ana-review-better.jpg",
+          rating: 5
+        },
+        {
+          author: "Peter and Renan",
+          text: "Thank you Tatiana, we couldn't have asked for a better wedding planner! You made us feel very special and comfortable throughout our time working with you. We are eternally grateful for you and your entire team! ❤️",
+          image: "/src/images/review/PeterRenanreview.jpg",
+          rating: 5
+        },
+        {
+          author: "Maria José Bonilla",
+          text: "Hi Tati, how are you? Look, I'm still receiving messages congratulating me on how beautiful everything was. My husband's entire family was too surprised, they told me it's the best wedding they've ever attended!! I was truly more than satisfied with your work, you completely exceeded my expectations!! It was the wedding of our dreams, thank you so much for everything!!!",
+          image: "/src/images/review/Mariabonillareview.jpg",
+          rating: 5
+        },
+        {
+          author: "Hannah Catherine",
+          text: "Tatiana, now that we've had time to recover with our families, we wanted to thank you enormously for everything you did for us. Not just on Friday, but also the 12 months before. You were so patient, so adaptable, and so organized that you kept our planning on track and really thought of everything. Plus, you were so easy to get to know, and your humor and disposition were key to making us feel so happy and confident on our wedding day that everything would be perfect. My family can't stop talking about how fantastic you were on Friday.",
+          image: "/src/images/review/Hannareview.jpg",
+          rating: 5
+        },
+        {
+          author: "Alejandra Fandiño",
+          text: "We had the most amazing wedding thanks to Le Mariage Cartagena! Everything was beautifully organized, stress-free, and truly magical. The team was professional, attentive, and made our day unforgettable. Highly recommended! ♥️✨.",
+          image: "/src/images/review/alejandra-review.png",
+          rating: 5
+        },
+      ]
+    },
+
     contact: {
       title: "Let's Build Your Dream Wedding Together",
       subTitle: "At Le Mariage, we don't just create events, we create experiences that last a lifetime. Trust us to make your most cherished dreams come true and transform every moment into a memory you'll cherish forever.",
