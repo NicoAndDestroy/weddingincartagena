@@ -149,7 +149,7 @@ const en = {
         {
           author: "Anita Yang",
           text: "Thank you for organizing the event, the team was very happy and we had many cocktails!",
-          image: "/src/images/review/review1.jpg",
+          image: "/src/images/review/ana-review-better.jpg",
           rating: 5
         },
         {
@@ -171,17 +171,11 @@ const en = {
           rating: 5
         },
         {
-          author: "Maria Rodriguez",
-          text: "I would buy again without hesitation.",
-          image: "/src/images/review/review1.jpg",
+          author: "Alejandra Fandiño",
+          text: "We had the most amazing wedding thanks to Le Mariage Cartagena! Everything was beautifully organized, stress-free, and truly magical. The team was professional, attentive, and made our day unforgettable. Highly recommended! ♥️✨.",
+          image: "/src/images/review/alejandra-review.png",
           rating: 5
         },
-        {
-          author: "Luis Gomez",
-          text: "Everything was perfect from start to finish.",
-          image: "/src/images/review/review1.jpg",
-          rating: 5
-        }
       ]
     },
 
