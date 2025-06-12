@@ -125,31 +125,31 @@ const es = {
         {
           author: "Anita Yang",
           text: "Gracias por organizar el evento, el equipo estaba muy feliz y tomamos muchos cocteles!",
-          image: "/src/images/review/ana-review-better.jpg",
+          image: "/Imagenes Bodas/review/anita-review.png",
           rating: 5
         },
         {
           author: "Peter y Renan",
           text: "Gracias Tatiana, ¡no podríamos haber pedido una mejor organizadora de bodas! Nos hiciste sentir muy especiales y cómodos durante todo el tiempo que trabajamos contigo. ¡Estamos eternamente agradecidos por ti y todo tu equipo! ❤️",
-          image: "/src/images/review/PeterRenanreview.jpg",
+          image: "/Imagenes Bodas/review/peter-review.png",
           rating: 5
         },
         {
           author: "Maria José Bonilla",
           text: "Hola Tati, ¿Cómo estás? ¡Mira que hasta hoy he recibido mensajes felicitándome por lo hermoso que estuvo todo, toda la familia de mi esposo quedo demasiado sorprendida para superbién, me han dicho que es la mejor boda a la que han asistido!! ¡Yo de verdad que quede más que satisfecha con tu trabajo, superaste completamente mis expectativas!!1 fue la boda de nuestros sueños, muchas gracias por todo!!!",
-          image: "/src/images/review/Mariabonillareview.jpg",
+          image: "/Imagenes Bodas/review/maria-review.png",
           rating: 5
         },
         {
           author: "Hannah Catherine",
           text: "Tatiana, ahora que hemos tenido tiempo de recuperarnos con nuestras familias, queríamos agradecerte enormemente todo lo que hiciste por nosotros. No solo el viernes, sino también los 12 meses anteriores. Fuiste tan paciente, tan adaptable y tan organizada que mantuviste nuestra planificación al día y realmente pensaste en todo. Además, fue muy fácil conocerte, y tu humor y tu disposición fueron fundamentales para hacernos sentir tan felices y seguros el día de nuestra boda de que todo saldría perfecto. Mi familia no para de hablar de lo fantástica que fuiste el viernes.",
-          image: "/src/images/review/Hannareview.jpg",
+          image: "/Imagenes Bodas/review/hannah-review.png",
           rating: 5
         },
         {
           author: "Alejandra Fandiño",
           text: "¡Tuvimos una boda increíble gracias a Le Mariage Cartagena! Todo estuvo impecablemente organizado, sin estrés y realmente mágico. El equipo fue profesional, atento e hizo que nuestro día fuera inolvidable. ¡Muy recomendable! ♥️✨",
-          image: "/src/images/review/alejandra-review.png",
+          image: "/Imagenes Bodas/review/alejandra-review.png",
           rating: 5
         },
       ]
