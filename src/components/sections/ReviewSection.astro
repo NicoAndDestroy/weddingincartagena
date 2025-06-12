@@ -39,12 +39,15 @@ const baseUrl = locale === 'en' ? '' : '/es';
   grid-auto-flow: column;
   grid-auto-columns: 100%;
   gap: 1rem;
-  transition: transform 0.5s ease;
+  overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
-  overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE y Edge */
+}
+
+.review-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
 }
 
 .review {
@@ -122,6 +125,7 @@ button:hover {
 @media (min-width: 640px) {
   .review-slider {
     grid-auto-columns: 50%;
+
   }
 }
 
@@ -155,40 +159,51 @@ button:hover {
 
   </div>
 
-  <script is:inline>
-    let currentIndex = 0;
+<script is:inline>
+  let currentIndex = 0;
+  const slider = document.getElementById('reviewSlider');
 
-    const getSlidesPerView = () => {
-      if (window.innerWidth >= 1024) return 4;
-      if (window.innerWidth >= 640) return 2;
-      return 1;
-    };
+  function getSlidesPerView() {
+    return window.innerWidth >= 1024 ? 4 :
+           window.innerWidth >= 640 ? 2 : 1;
+  }
 
-    const updateSlider = () => {
-      const slider = document.getElementById('reviewSlider');
-      const slidesPerView = getSlidesPerView();
-      const offset = (100 / slidesPerView) * currentIndex;
-      slider.style.transform = `translateX(-${offset}%)`;
-    };
+  function updateSlider() {
+    const slide = slider.children[0];
+    if (!slide) return;
 
-    const nextSlide = () => {
-      const slider = document.getElementById('reviewSlider');
-      const totalSlides = slider.children.length;
-      const slidesPerView = getSlidesPerView();
-      currentIndex = (currentIndex + 1) % (totalSlides - slidesPerView + 1);
-      updateSlider();
-    };
+    const slideWidth = slide.offsetWidth;
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = slider.children.length - slidesPerView;
 
-    const prevSlide = () => {
-      const slider = document.getElementById('reviewSlider');
-      const totalSlides = slider.children.length;
-      const slidesPerView = getSlidesPerView();
-      currentIndex = (currentIndex - 1 + (totalSlides - slidesPerView + 1)) % (totalSlides - slidesPerView + 1);
-      updateSlider();
-    };
+    // Mantener currentIndex dentro del rango válido
+    currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
 
-    window.addEventListener('resize', updateSlider);
-    setInterval(nextSlide, 8000);
+    // Scroll al índice deseado
+    slider.scrollTo({
+      left: slideWidth * currentIndex,
+      behavior: 'smooth'
+    });
+  }
+
+  function nextSlide() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = slider.children.length - slidesPerView;
+    currentIndex = (currentIndex < maxIndex) ? currentIndex + 1 : 0;
     updateSlider();
-  </script>
+  }
+
+  function prevSlide() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = slider.children.length - slidesPerView;
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : maxIndex;
+    updateSlider();
+  }
+
+  window.addEventListener('resize', updateSlider);
+  setInterval(nextSlide, 8000);
+  updateSlider();
+</script>
+
+
 </section>
