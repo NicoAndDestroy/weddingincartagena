@@ -57,9 +57,27 @@ interface Props {
   </div>
 
   <!-- Hero Image Section -->
-  <div class="flex w-full">
-    <div class="top-12 overflow-hidden">
-        <video src="/videos/Video Le Mariage.mp4" class="rounded-xl" controls autoplay muted></video>
-    </div>
+<div class="flex w-full">
+  <div class="top-12 overflow-hidden">
+    <!-- Video para pantallas grandes -->
+    <video 
+      src="/videos/Video Le Mariage.mp4" 
+      class="hidden lg:block rounded-xl" 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+    ></video>
+
+    <!-- Video para pantallas pequeñas -->
+    <video 
+      src="/videos/Hero-Web-Mobile - (9x16).mp4" 
+      class="block lg:hidden rounded-xl" 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+    ></video>
   </div>
+</div>
 </section>
