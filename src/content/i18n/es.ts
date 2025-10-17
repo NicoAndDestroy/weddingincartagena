@@ -95,7 +95,7 @@ const es = {
           section: "Contacto",
           links: [
             { name: "contact@weddingincartagena.com", url: "mailto:contact@weddingincartagena.com" },
-            { name: "+57 322 694 3874", url: "tel:+573226943874" },
+            { name: "+573004128389", url: "tel:+573004128389  " },
             { name: "Cartagena, Colombia", url: "https://www.google.com/maps/place/Cartagena,+Cartagena+Province,+Bolivar/@10.4001987,-75.5085254,13z/data=!3m1!4b1!4m6!3m5!1s0x8ef625e7ae9d1351:0xb161392e033f26ca!8m2!3d10.3932277!4d-75.4832311!16zL20vMGg0NW4?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" }
           ]
         },
@@ -158,7 +158,7 @@ const es = {
   contact: {
       title: "Construyamos juntos la boda de tus sueños",
       subTitle: "En Le Mariage, no solo creamos eventos, creamos experiencias que duran toda la vida. Confía en nosotros para hacer realidad tus sueños más preciados y transformar cada momento en un recuerdo que atesorarás por siempre.",
-      url: "https://wa.me/573226943874?text=Hola%2C%20soy%20Tatiana%20y%20ser%C3%A9%20tu%20planeadora%20de%20bodas%20en%20Cartagena.%20Estoy%20aqu%C3%AD%20para%20ayudarte%20a%20hacer%20realidad%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os.%20Escr%C3%ADbeme%20para%20conocer%20todos%20los%20detalles%20y%20agendar%20una%20llamada%20personalizada.",
+      url: "https://wa.me/+573004128389?text=Hola%2C%20soy%20Tatiana%20y%20ser%C3%A9%20tu%20planeadora%20de%20bodas%20en%20Cartagena.%20Estoy%20aqu%C3%AD%20para%20ayudarte%20a%20hacer%20realidad%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os.%20Escr%C3%ADbeme%20para%20conocer%20todos%20los%20detalles%20y%20agendar%20una%20llamada%20personalizada.",
       alt: "Sección de preguntas frecuentes de Le Mariage con las dudas y respuestas más comunes."
     },
   about: {
