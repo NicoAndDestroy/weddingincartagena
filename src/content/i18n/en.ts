@@ -118,8 +118,8 @@ const en = {
         {
           section: "Contact",
           links: [
-            { name: "contact@weddingincartagena.com", url: "mailto:contact@weddingincartagena.com" },
-            { name: "+57 322 694 3874", url: "tel:+573226943874" },
+            { name: "lemariagecartagena@hotmail.com", url: "mailto:lemariagincartagena.com" },
+            { name: "+573004128389", url: "https://wa.me/573004128389" },
             { name: "Cartagena, Colombia", url: "https://www.google.com/maps/place/Cartagena,+Cartagena+Province,+Bolivar/@10.4001987,-75.5085254,13z/data=!3m1!4b1!4m6!3m5!1s0x8ef625e7ae9d1351:0xb161392e033f26ca!8m2!3d10.3932277!4d-75.4832311!16zL20vMGg0NW4?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" }
           ]
         },
@@ -182,7 +182,7 @@ const en = {
     contact: {
       title: "Let's Build Your Dream Wedding Together",
       subTitle: "At Le Mariage, we don't just create events, we create experiences that last a lifetime. Trust us to make your most cherished dreams come true and transform every moment into a memory you'll cherish forever.",
-      url: "https://wa.me/573226943874?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!",
+      url: "https://wa.me/573004128389?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!",
       alt: "FAQ Section of Le Mariage with the most common queries and answers."
     }
   };
