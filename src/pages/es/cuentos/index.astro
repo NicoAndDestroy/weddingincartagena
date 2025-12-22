@@ -1,0 +1,26 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import Navbar from "@/components/sections/Navbar.astro";
+import FooterSection from "@/components/sections/FooterSection.astro";
+---
+
+<MainLayout title="Cuentos de Hadas | Wedding in Cartagena">
+  <Navbar />
+
+  <main class="container py-5">
+    <header class="text-center mb-5">
+      <h1 class="display-5 fw-bold">Cuentos de Hadas</h1>
+      <p class="lead mx-auto" style="max-width: 60ch;">
+        Historias reales de bodas, contadas como capítulos de un libro.
+      </p>
+    </header>
+
+    <section class="text-center">
+      <a class="btn btn-primary btn-lg" href="/es/cuentos/primer-capitulo">
+        Comenzar a leer
+      </a>
+    </section>
+  </main>
+
+  <FooterSection />
+</MainLayout>
