@@ -14,7 +14,7 @@ const en = {
       subTitle: ` At <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span>, we specialize in destination weddings and exclusive events in Cartagena.
                 We design, plan, and coordinate unforgettable wedding experiences for couples from around the world.
                 Contact us today and start planning your dream wedding in Colombia.`,
-      cta: "Contact Us",
+      cta: "Plan your wedding in Cartagena",
       rating: `<span class="font-bold">4.8</span> / 5`,
       reviews: `From Over <span class="font-bold">12.8k</span> Reviews`,
       alt: "Le Mariage home page, Weddings in Cartagena, events in Cartagena so you can schedule your dream wedding"
