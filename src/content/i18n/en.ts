@@ -9,77 +9,92 @@ const en = {
     { url: '/#contact', name: 'Contact' },
   ],
   brand: 'Le Mariage',
-    hero: {
-      title: `Your Dream Wedding in <span class="text-yellow-500 dark:text-yellow-400">Cartagena </span> Colombia`,
-      subTitle: `At <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span> we make your dreams come true in Cartagena. With passion and dedication, we help you create unforgettable memories for your wedding or event. Contact us and start today!`,
+   hero: {
+  title: `Wedding Planner in <span class="text-yellow-500 dark:text-yellow-400">Cartagena</span>, Colombia`,
+      subTitle: ` At <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span>, we specialize in destination weddings and exclusive events in Cartagena.
+                We design, plan, and coordinate unforgettable wedding experiences for couples from around the world.
+                Contact us today and start planning your dream wedding in Colombia.`,
       cta: "Contact Us",
       rating: `<span class="font-bold">4.8</span> / 5`,
       reviews: `From Over <span class="font-bold">12.8k</span> Reviews`,
       alt: "Le Mariage home page, Weddings in Cartagena, events in Cartagena so you can schedule your dream wedding"
     },
     about: {
-      title: "About Us",
-      subTitle: `Welcome to our <span class=\"text-yellow-500 dark:text-yellow-400\">family</span> in the world of dreams come true!`,
+      title: "About Our Wedding Planning Services in Cartagena",
+      subTitle: `
+Welcome to the <span class="text-yellow-500 dark:text-yellow-400">Le Mariage</span> family, where destination weddings and unforgettable events in Cartagena come to life.
+We are a professional wedding planning team dedicated to creating meaningful, elegant, and stress-free celebrations for couples from around the world.
+`,
+
       tabs: [
         {
           heading: "Exceeding Expectations",
-          content: "We strive to exceed your expectations at every step, taking your ideas from conception to realization with style and an incomparable personal touch.",
+          content:`As an experienced wedding planner in Cartagena, we strive to exceed your expectations at every step.
+                  From the initial concept to the final celebration, we transform your ideas into a seamless and beautifully executed wedding experience.`,
           svg: "tools",
           alt: "Yellow and black heavy equipment on brown grass field"
         },
         {
           heading: "Passion for Excellence",
-          content: "At the heart of our company lies an unwavering passion for excellence in wedding and event planning.",
+          content:`At the heart of our company lies an unwavering passion for excellence in wedding and event planning.
+                  We carefully select trusted local vendors, manage timelines, and oversee every detail to ensure a flawless wedding day in Cartagena.`,
           svg: "dashboard",
           alt: "A screenshot or graphic representation of the intuitive dashboard"
         },
         {
           heading: "Unforgettable Moments",
-          content: "At Le Mariage, we take pride in presenting ourselves as your trusted partner in creating unforgettable moments in Cartagena and beyond.",
+          content: `At Le Mariage, we proudly serve as your trusted wedding planner in Cartagena.
+                    Our mission is to create unforgettable moments that reflect your story, your style, and the unique beauty of Colombia’s Caribbean coast.`,
           svg: "house",
           alt: "Gray metal building frame near tower crane during daytime"
         }
       ]
     },
     values: {
-      title: "Our Values",
-      subTitle: "In a world where trust is invaluable, we commit to being your most reliable partner. Transparency and honesty guide every interaction we have with you.",
+      title: "Our Values as a Wedding Planner in Cartagena",
+      subTitle: `In a world where trust is invaluable, we commit to being your most reliable wedding planning partner in Cartagena.
+                Transparency, honesty, and dedication guide every interaction we have with our couples and families.`,
       alt: "About Section of Le Mariage with our values: Passion, Unique memories and trust.",
       features: [
         {
           heading: "Culture",
-          content: "Immerse yourself in the rich history and vibrant culture of Cartagena, where colonial architecture blends with the warmth and joy of its people, creating a unique and charming atmosphere for your events.",
+          content: `Immerse yourself in the rich history and vibrant culture of Cartagena.
+                  As a local wedding planner, we integrate colonial architecture, Caribbean traditions, and local charm to create authentic and meaningful wedding experiences.`,
           svg: "heart"
         },
         {
           heading: "Memories",
-          content: "In Cartagena, every moment becomes an unforgettable memory. From picturesque sunsets to nights filled with music and dancing, you'll find inspiration around every corner to create memorable experiences for you and your guests.",
+          content: `In Cartagena, every wedding moment becomes an unforgettable memory.
+                    From romantic sunsets by the sea to joyful nights filled with music and celebration, we design weddings that you and your guests will cherish forever.`,
           svg: "star"
         },
         {
           heading: "Tradition",
-          content: "Celebrate your events in the heart of history, surrounded by ancient walls, fortresses, and cobblestone streets that evoke the charm of the colonial era and add a touch of authenticity to your celebrations.",
+          content: `Celebrate your wedding surrounded by the history of Cartagena.
+                  Ancient walls, fortresses, and cobblestone streets add authenticity, elegance, and timeless charm to destination weddings in Colombia.`,
           svg: "shield"
         },
         {
           heading: "Ambience",
-          content: "Enjoy the tropical climate and beautiful beaches of Cartagena, which provide the perfect backdrop for your outdoor weddings and events, full of romance and elegance.",
+          content: `Enjoy the tropical climate and stunning beaches of Cartagena.
+                    These natural settings provide the perfect backdrop for outdoor weddings, beach ceremonies, and elegant destination events.`,
           svg: "globe"
         },
         {
           heading: "Adventure",
-          content: "Discover the excitement of exploring the natural and cultural wonders that Cartagena offers, from excursions to Caribbean islands to guided tours of the city's most emblematic places, there is always something new to discover.",
+          content: `Cartagena offers endless opportunities beyond the wedding day. From Caribbean island excursions to cultural city tours, we help couples and guests experience Colombia in a memorable and meaningful way.`,
           svg: "camera"
         },
         {
           heading: "Nature",
-          content: "Enjoy the lush natural beauty of Cartagena, from its crystal-clear beaches to its vibrant tropical landscapes, inviting you to celebrate in harmony with nature and create magical moments that last forever.",
+          content: `Surround your celebration with Cartagena’s lush natural beauty.From crystal-clear waters to tropical landscapes, nature becomes part of the atmosphere, creating magical wedding moments that last a lifetime.
+                    From crystal-clear waters to tropical landscapes, nature becomes part of the atmosphere, creating magical wedding moments that last a lifetime.`,
           svg: "flag"
         },
       ]
     },
     faq: {
-      title: "Frequently Asked Questions",
+      title: "Frequently Asked Questions About Weddings in Cartagena",
       subTitle: "We understand that planning a wedding can be overwhelming, which is why we have compiled a list of the most common questions we receive to help you make the process easier.", 
       faqs: [
         {
@@ -87,7 +102,7 @@ const en = {
           answer: "I offer a full range of wedding planning services in Cartagena, including day-of coordination, full planning, design and decoration, vendor selection, budget management, and more. My goal is to ensure that your special day is perfect in every way."
         },
         {
-          question: "How do you work with couples to plan their wedding in Cartagena?",
+          question: "How does a wedding planner in Cartagena work with couples to plan their wedding?",
           answer: "I work closely with each couple to understand their vision and preferences. We meet to discuss your ideas, themes, and specific wishes. From there, I create a detailed and personalized plan to make every aspect of your wedding exactly as you imagined, taking advantage of Cartagena's beauty and charm."
         },
         {
@@ -95,20 +110,24 @@ const en = {
           answer: "I recommend hiring a wedding planner as soon as you decide to get married. The more time we have to plan, the better we can organize all the details and ensure everything goes perfectly. However, I also offer day-of coordination services for weddings that are already in progress."
         },
         {
-          question: "Do you work with a specific budget?",
+          question: "Does a wedding planner in Cartagena work with a specific budget?",
           answer: "Yes, I work with the budget you have in mind. Part of my job is to help you maximize your budget and find creative solutions to achieve your dream wedding without exceeding your financial limits."
         },
         {
-          question: "What happens if I need to change the date of my wedding?",
+          question: "What happens if I need to change the date of my wedding in Cartagena?",
           answer: "I understand that unforeseen circumstances can arise. I work with you to make the necessary adjustments and reorganize all aspects of the wedding for the new date, ensuring everything is handled as smoothly as possible."
         },
         {
-          question: "How can I contact you to discuss the details of my wedding in Cartagena?",
+          question: "How can I contact a wedding planner in Cartagena?",
           answer: "You can contact me directly via WhatsApp by clicking the button below. I am available to answer your questions, discuss your ideas, and start planning your dream wedding."
         },
         {
-          question: "Do you offer design and decoration services?",
+          question: "Does a wedding planner in Cartagena offer design and decoration services?",
           answer: "Yes, in addition to planning, I also offer design and decoration services to ensure that every detail of your wedding is beautiful and reflects your personal style."
+        },
+        {
+          question: "How much does it cost to hire a wedding planner in Cartagena?",
+          answer: "The cost of a wedding planner in Cartagena depends on the type of wedding, number of guests, venue, and included services. At Le Mariage we help you optimize your budget to create an unforgettable wedding without exceeding your limits."
         }
       ]
     },
