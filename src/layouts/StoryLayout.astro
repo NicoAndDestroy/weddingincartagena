@@ -1,0 +1,98 @@
+---
+import Meta from "@components/Meta.astro";
+import Navbar from "@components/sections/Navbar.astro";
+import FooterSection from "@components/sections/FooterSection.astro";
+import { SITE } from "@data/constants";
+
+interface Props {
+  t?: any;
+  title?: string;
+  meta?: string;
+  structuredData?: object;
+  lang?: string;
+}
+
+const {
+  t,
+  title = SITE.title,
+  meta,
+  structuredData,
+  lang = "en",
+} = Astro.props;
+---
+
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <Meta meta={meta} structuredData={structuredData} />
+    <title>{title}</title>
+  </head>
+
+  <body class="bg-[#f7f5f2] text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
+    <!-- Navbar sigue existiendo para navegación global -->
+    <Navbar t={t} />
+
+    <!-- CONTENEDOR DE LECTURA -->
+    <main class="story-wrapper">
+      <article class="story-content">
+        <slot />
+      </article>
+    </main>
+
+    <!-- Footer más discreto -->
+    <FooterSection t={t} />
+
+    <style>
+      /* ===============================
+         STORY LAYOUT — BOOK EXPERIENCE
+      =============================== */
+
+      .story-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 1rem;
+      }
+
+      .story-content {
+        max-width: 720px; /* ancho tipo libro */
+        width: 100%;
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.8;
+        font-size: 1.05rem;
+      }
+
+      .story-content h1,
+      .story-content h2,
+      .story-content h3 {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .story-content p {
+        margin-bottom: 1.5rem;
+      }
+
+      .story-content img {
+        margin: 3rem auto;
+        display: block;
+        max-width: 100%;
+        border-radius: 0.5rem;
+      }
+
+      .story-content blockquote {
+        margin: 3rem 0;
+        padding-left: 1.5rem;
+        border-left: 4px solid #eab308; /* amarillo romántico */
+        font-style: italic;
+        color: #555;
+      }
+
+      @media (max-width: 640px) {
+        .story-content {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </body>
+</html>

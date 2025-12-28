@@ -3,6 +3,7 @@ const en = {
     { url: '/', name: 'Home' },
     { url: '/#about', name: 'About' },
     { url: '/#values', name: 'Our Values' },
+    { url: '/cuentos', name: 'Fairy Tales' },
     { url: '/#reviews', name: 'Reviews' },
     { url: '/#faq', name: 'FAQ' },
     { url: '/#contact', name: 'Contact' },
