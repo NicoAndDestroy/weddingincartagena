@@ -286,6 +286,7 @@ export const navBarLinks: NavLink[] = [
   { name: "Services", url: "/services" },
   { name: "Blog", url: "/blog" },
   { name: "Contact", url: "/contact" },
+  { name: "Contact", url: "/contact" },
 ];
 ```
 
