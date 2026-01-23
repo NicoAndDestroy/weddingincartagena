@@ -131,7 +131,7 @@ const es = {
       items: [
         {
           author: "Anita Yang",
-          text: "Gracias por organizar el evento, el equipo estaba muy feliz y tomamos muchos cocteles!",
+          text: "André! No tendremos palabras para agradecerte todo lo que hiciste por nosotros! Tu, y todos los que fueron partícipes de esto (mi ayuda personalizada, decoración, video, fotografía… los que se me pueden quedar por fuera) hicieron posible un día maravilloso! Gracias x la buena energía, x la c a l m a, la tranquilidad, el cero afán que fue fundamental para nosotros. Gracias x la comprensión, por estar ahí en horarios nocturnos, por conectar con nosotros! No tengo dudas que escogí la mejor. Tqm ❤️❤️ a ti y a todos ❤️",
           image: "/Imagenes Bodas/review/anita-review.png",
           rating: 5
         },

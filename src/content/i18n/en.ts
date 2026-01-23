@@ -168,7 +168,7 @@ We are a professional wedding planning team dedicated to creating meaningful, el
       items: [
         {
           author: "Anita Yang",
-          text: "Thank you for organizing the event, the team was very happy and we had many cocktails!",
+          text: "Andre! We will not have words to thank you for everything you did for us! You, and everyone who participated in this (my personalized help, decoration, video, photography... those I may have left out) made a wonderful day possible! Thank you for the good energy, for the calm, the tranquility, the zero anxiety that was fundamental for us. Thank you for your understanding, for being there at night, for connecting with us! I have no doubt that I chose the best. Tqm ❤️❤️ to you and everyone ❤️",
           image: "/Imagenes Bodas/review/anita-review.png",
           rating: 5
         },
