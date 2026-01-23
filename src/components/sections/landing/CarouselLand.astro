@@ -1,20 +1,22 @@
 ---
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 /**
  * Load all landscape images dynamically.
- * Using folder-based glob to avoid build errors when files are deleted.
+ * Safe even if files are deleted.
  */
-const imagesLand = import.meta.glob(
-  '/src/images/values/land/*.jpg',
+const imagesLand = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/values/land/*.jpg",
   { eager: true }
 );
 
-// Normalize images array
-// @ts-ignore
-const imageArrayLand = Object.values(imagesLand).map((image) => ({
-  ...image,
-  mode: 'land',
+/**
+ * Normalize images
+ */
+const imageArrayLand = Object.values(imagesLand).map((img) => ({
+  src: img.default,
+  mode: "land",
 }));
 
 const alt = "Wedding in Cartagena Colombia - Le Mariage";
@@ -30,24 +32,21 @@ const hasImages = imageArrayLand.length > 0;
   class="relative"
   aria-label={title}
 >
-  <!-- Slider main container -->
   <div class="swiper">
-    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
 
       {hasImages ? (
         imageArrayLand.map((image) => (
           <div class="swiper-slide">
             <Image
-              class="w-full aspect-[5/3] object-cover"
-              src={image.default}
+              src={image.src}
               alt={alt}
+              class="w-full aspect-[5/3] object-cover"
               loading="lazy"
             />
           </div>
         ))
       ) : (
-        <!-- Fallback slide -->
         <div class="swiper-slide">
           <div class="w-full aspect-[5/3] flex items-center justify-center bg-gray-200 text-gray-600 text-sm">
             No images available
@@ -66,6 +65,7 @@ const hasImages = imageArrayLand.length > 0;
   </div>
 </section>
 
+
 <!-- =======================
  Swiper Init
 ======================= -->
@@ -78,28 +78,32 @@ const hasImages = imageArrayLand.length > 0;
   import 'swiper/css/pagination';
   import 'swiper/css/autoplay';
 
-  const container = document.querySelector('#wedding-slider-land .swiper');
-  const slidesCount = document.querySelectorAll(
-    '#wedding-slider-land .swiper-slide'
-  ).length;
+  const container = document.querySelector(
+    '#wedding-slider-land .swiper'
+  );
 
-  if (container && slidesCount > 0) {
-    new Swiper(container, {
-      modules: [Navigation, Pagination, Autoplay],
-      slidesPerView: 1,
-      spaceBetween: 40,
-      loop: slidesCount > 1,
-      autoplay: slidesCount > 1
-        ? { delay: 5000, disableOnInteraction: false }
-        : false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        prevEl: '.swiper-button-prev',
-        nextEl: '.swiper-button-next',
-      },
-    });
+  if (container instanceof HTMLElement) {
+    const slidesCount = container.querySelectorAll('.swiper-slide').length;
+
+    if (slidesCount > 0) {
+      new Swiper(container, {
+        modules: [Navigation, Pagination, Autoplay],
+        slidesPerView: 1,
+        spaceBetween: 40,
+        loop: slidesCount > 1,
+        autoplay: slidesCount > 1
+          ? { delay: 5000, disableOnInteraction: false }
+          : false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next',
+        },
+      });
+    }
   }
 </script>
+
