@@ -170,7 +170,8 @@ We are a professional wedding planning team dedicated to creating meaningful, el
           author: "Anita Yang",
           text: "Andre! We will not have words to thank you for everything you did for us! You, and everyone who participated in this (my personalized help, decoration, video, photography... those I may have left out) made a wonderful day possible! Thank you for the good energy, for the calm, the tranquility, the zero anxiety that was fundamental for us. Thank you for your understanding, for being there at night, for connecting with us! I have no doubt that I chose the best. Tqm ❤️❤️ to you and everyone ❤️",
           image: "/Imagenes Bodas/review/ana-review.webp",
-          rating: 5
+          rating: 5,
+          imagePosition: "50% 20%"
         },
         {
           author: "Peter and Renan",

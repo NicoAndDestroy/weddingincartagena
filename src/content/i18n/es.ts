@@ -133,7 +133,8 @@ const es = {
           author: "Anita Yang",
           text: "André! No tendremos palabras para agradecerte todo lo que hiciste por nosotros! Tu, y todos los que fueron partícipes de esto (mi ayuda personalizada, decoración, video, fotografía… los que se me pueden quedar por fuera) hicieron posible un día maravilloso! Gracias x la buena energía, x la c a l m a, la tranquilidad, el cero afán que fue fundamental para nosotros. Gracias x la comprensión, por estar ahí en horarios nocturnos, por conectar con nosotros! No tengo dudas que escogí la mejor. Tqm ❤️❤️ a ti y a todos ❤️",
           image: "/Imagenes Bodas/review/ana-review.webp",
-          rating: 5
+          rating: 5,
+          imagePosition: "50% 20%"
         },
         {
           author: "Peter y Renan",
