@@ -171,13 +171,13 @@ We are a professional wedding planning team dedicated to creating meaningful, el
           text: "Andre! We will not have words to thank you for everything you did for us! You, and everyone who participated in this (my personalized help, decoration, video, photography... those I may have left out) made a wonderful day possible! Thank you for the good energy, for the calm, the tranquility, the zero anxiety that was fundamental for us. Thank you for your understanding, for being there at night, for connecting with us! I have no doubt that I chose the best. Tqm ❤️❤️ to you and everyone ❤️",
           image: "/Imagenes Bodas/review/ana-review.webp",
           rating: 5,
-          imagePosition: "50% 20%"
+          imagePosition: "1% 10%"
         },
         {
           author: "Peter and Renan",
           text: "Thank you Tatiana, we couldn't have asked for a better wedding planner! You made us feel very special and comfortable throughout our time working with you. We are eternally grateful for you and your entire team! ❤️",
           image: "/Imagenes Bodas/review/peter-review.webp",
-          rating: 5
+          rating: 5,
         },
         {
           author: "Maria José Bonilla",
@@ -195,6 +195,12 @@ We are a professional wedding planning team dedicated to creating meaningful, el
           author: "Alejandra Fandiño",
           text: "We had the most amazing wedding thanks to Le Mariage Cartagena! Everything was beautifully organized, stress-free, and truly magical. The team was professional, attentive, and made our day unforgettable. Highly recommended! ♥️✨.",
           image: "/Imagenes Bodas/review/alejandra-review.webp",
+          rating: 5
+        },
+        {
+          author: "Mara Villaverde",
+          text: "Highly recommend Tatiana and her team! She was incredibly patient throughout the entire process and has amazing local know-how, which made a huge difference in planning from abroad. As a foreigner, it was invaluable to have her as a reliable point person on the ground in Cartagena, coordinating details and solving issues before they even reached me. She is very resourceful, always coming back with options, ideas, and trusted vendors that fit our budget and vision. Super recommend her to any couple planning a destination wedding in Cartagena—you will be in excellent hands!",
+          image: "/Imagenes Bodas/review/mara-review.webp",
           rating: 5
         },
       ]
