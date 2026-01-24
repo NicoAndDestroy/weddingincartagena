@@ -4,12 +4,12 @@ import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
 
-import node from "@astrojs/node";
+
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://weddingincartagena.com",
-  output: "server",
+  output: "static",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -109,7 +109,5 @@ export default defineConfig({
       brotli: true,
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
+
 });
