@@ -169,31 +169,38 @@ We are a professional wedding planning team dedicated to creating meaningful, el
         {
           author: "Anita Yang",
           text: "Andre! We will not have words to thank you for everything you did for us! You, and everyone who participated in this (my personalized help, decoration, video, photography... those I may have left out) made a wonderful day possible! Thank you for the good energy, for the calm, the tranquility, the zero anxiety that was fundamental for us. Thank you for your understanding, for being there at night, for connecting with us! I have no doubt that I chose the best. Tqm ❤️❤️ to you and everyone ❤️",
-          image: "/Imagenes Bodas/review/anita-review.png",
-          rating: 5
+          image: "/Imagenes Bodas/review/ana-review.webp",
+          rating: 5,
+          imagePosition: "1% 10%"
         },
         {
           author: "Peter and Renan",
           text: "Thank you Tatiana, we couldn't have asked for a better wedding planner! You made us feel very special and comfortable throughout our time working with you. We are eternally grateful for you and your entire team! ❤️",
-          image: "/Imagenes Bodas/review/peter-review.png",
-          rating: 5
+          image: "/Imagenes Bodas/review/peter-review.webp",
+          rating: 5,
         },
         {
           author: "Maria José Bonilla",
           text: "Hi Tati, how are you? Look, I'm still receiving messages congratulating me on how beautiful everything was. My husband's entire family was too surprised, they told me it's the best wedding they've ever attended!! I was truly more than satisfied with your work, you completely exceeded my expectations!! It was the wedding of our dreams, thank you so much for everything!!!",
-          image: "/Imagenes Bodas/review/maria-review.png",
+          image: "/Imagenes Bodas/review/maria-review.webp",
           rating: 5
         },
         {
           author: "Hannah Catherine",
           text: "Tatiana, now that we've had time to recover with our families, we wanted to thank you enormously for everything you did for us. Not just on Friday, but also the 12 months before. You were so patient, so adaptable, and so organized that you kept our planning on track and really thought of everything. Plus, you were so easy to get to know, and your humor and disposition were key to making us feel so happy and confident on our wedding day that everything would be perfect. My family can't stop talking about how fantastic you were on Friday.",
-          image: "/Imagenes Bodas/review/hannah-review.png",
+          image: "/Imagenes Bodas/review/hannah-review.webp",
           rating: 5
         },
         {
           author: "Alejandra Fandiño",
           text: "We had the most amazing wedding thanks to Le Mariage Cartagena! Everything was beautifully organized, stress-free, and truly magical. The team was professional, attentive, and made our day unforgettable. Highly recommended! ♥️✨.",
-          image: "/Imagenes Bodas/review/alejandra-review.png",
+          image: "/Imagenes Bodas/review/alejandra-review.webp",
+          rating: 5
+        },
+        {
+          author: "Mara Villaverde",
+          text: "Highly recommend Tatiana and her team! She was incredibly patient throughout the entire process and has amazing local know-how, which made a huge difference in planning from abroad. As a foreigner, it was invaluable to have her as a reliable point person on the ground in Cartagena, coordinating details and solving issues before they even reached me. She is very resourceful, always coming back with options, ideas, and trusted vendors that fit our budget and vision. Super recommend her to any couple planning a destination wedding in Cartagena—you will be in excellent hands!",
+          image: "/Imagenes Bodas/review/mara-review.webp",
           rating: 5
         },
       ]
