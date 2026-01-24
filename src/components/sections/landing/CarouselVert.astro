@@ -1,7 +1,10 @@
 ---
 import { Image } from "astro:assets";
 
-const imagesVertical = import.meta.glob('/src/images/values/vertical/values_*.jpg', { eager: true });
+const imagesVertical = import.meta.glob(
+  '/src/images/values/vertical/values_*.{jpg,webp}',
+  { eager: true }
+);
 // @ts-ignore
 const imageArrayVertical = Object.values(imagesVertical).map((image) => ({ ...image, mode: 'vertical' }));
 
