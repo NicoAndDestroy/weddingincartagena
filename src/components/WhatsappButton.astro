@@ -4,72 +4,81 @@
 <div id="whatsapp">
   <a
     href="https://wa.me/573004128389?text=%20%C2%A1Cont%C3%A1ctanos%20hoy%20y%20comienza%20a%20planificar%20la%20celebraci%C3%B3n%20de%20tus%20sue%C3%B1os!"
-    aria-label="Plan your wedding in Cartagena"
+    aria-label="Plan your wedding in Cartagena via WhatsApp"
     target="_blank"
     rel="noopener noreferrer"
     class="toggle"
   >
     <img
       src="/icons/whatsapp.svg"
-      alt="Whatsapp icon"
-      width="28px"
+      alt=""
+      aria-hidden="true"
+      width="28"
+      height="28"
     />
   </a>
 </div>
-
+---
 
 <style>
+  #whatsapp .toggle {
+    position: fixed;
+    background-color: #25d366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    border: none;
+
+    color: #fff;
+    bottom: 70px;
+    right: 20px;
+    z-index: 50;
+
+    width: 60px;
+    height: 60px;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Focus visible (teclado) */
+  #whatsapp .toggle:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+  }
+
+  /* Pulse animation */
+  #whatsapp .toggle::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -5px;
+    background-color: #25d366;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+
+  /* Respeta usuarios con reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    #whatsapp .toggle::before {
+      animation: none;
+    }
+
     #whatsapp .toggle {
-        position: fixed;
-        transform: all 0.5s .ease;
-        background-color: #25d366;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        border-radius: 50px;
-        border-right: none;
-        color: #fff;
-        bottom: 70px;
-        right: 20px;
-        border: 0;
-        z-index: 50;
-        width: 60px;
-        height: 60px;
-        line-height: 50px;
+      transition: none;
     }
+  }
 
-    #whatsapp .toggle:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        display: block;
-        width: 70px;
-        height: 70px;
-        background-color: #25d366;
-        border-radius: 50%;
-        -webkit-animation: pulse-border 1500ms ease-out infinite;
-        animation: pulse-border 1500ms ease-out infinite;
+  @keyframes pulse-border {
+    0% {
+      transform: scale(1);
+      opacity: 1;
     }
-
-    #whatsapp .toggle:focus {
-        border: none;
-        outline: none;
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
     }
-
-    @keyframes pulse-border {
-        0% {
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            opacity: 1;
-        }
-
-        100% {
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-            opacity: 0;
-        }
-    }
+  }
 </style>
