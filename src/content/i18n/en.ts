@@ -141,7 +141,10 @@ We are a professional wedding planning team dedicated to creating meaningful, el
   date: "Wedding date",
   guests: "Estimated guests",
   message: "Tell us about your dream",
-  cta: "Request proposal"
+  cta: "Request proposal",
+  next: "Next",
+back: "Back",
+budget: "Estimated budget",
 },
 
     footer: {

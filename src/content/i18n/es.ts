@@ -104,7 +104,11 @@ const es = {
   date: "Fecha del evento",
   guests: "Invitados estimados",
   message: "Cuéntanos tu visión",
-  cta: "Solicitar propuesta"
+  cta: "Solicitar propuesta",
+  next: "Siguiente",
+  back: "Atrás",
+  budget: "Presupuesto estimado",
+
 },
 
   footer: {
