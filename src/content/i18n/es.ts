@@ -94,6 +94,23 @@ const es = {
         }
       ]
     },
+
+    form: {
+  title: "Comienza a planear la boda de tus sueños",
+  subtitle: "Cuéntanos tu idea y te contactaremos en menos de 24 horas.",
+  name: "Nombre completo",
+  email: "Correo electrónico",
+  phone: "Número de WhatsApp",
+  date: "Fecha del evento",
+  guests: "Invitados estimados",
+  message: "Cuéntanos tu visión",
+  cta: "Solicitar propuesta",
+  next: "Siguiente",
+  back: "Atrás",
+  budget: "Presupuesto estimado",
+
+},
+
   footer: {
       copyright: "©",
       brand: "Bodas en Cartagena por Le Mariage. Todos los derechos reservados.",
