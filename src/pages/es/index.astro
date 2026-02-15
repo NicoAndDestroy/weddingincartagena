@@ -13,6 +13,8 @@ import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import featureImage from "@images/features-image.avif";
 import ReviewSection from "@/components/sections/ReviewSection.astro";
+import LeadForm from "@components/sections/landing/LeadForm.astro";
+
 
 // Traducción
 import es from "@/content/i18n/es";
@@ -50,8 +52,12 @@ const avatarSrcs: Array<string> = [
 
   <ValuesSection t={t} src={featureImage} alt={t.values?.alt} features={features} />
 
-  <FAQ t={t} faqs={faqs} />
-  <CarouselVert />
+<FAQ t={t} faqs={faqs} />
+
+<LeadForm t={t} />
+
+<CarouselVert />
+
 
   <ContactSection
     title={t.contact?.title}

@@ -131,6 +131,19 @@ We are a professional wedding planning team dedicated to creating meaningful, el
         }
       ]
     },
+
+    form: {
+  title: "Start Planning Your Dream Wedding",
+  subtitle: "Tell us about your vision and we will contact you within 24 hours.",
+  name: "Full name",
+  email: "Email address",
+  phone: "WhatsApp number",
+  date: "Wedding date",
+  guests: "Estimated guests",
+  message: "Tell us about your dream",
+  cta: "Request proposal"
+},
+
     footer: {
       copyright: "©",
       brand: "Wedding in Cartagena by Le Mariage. All rights reserved.",
