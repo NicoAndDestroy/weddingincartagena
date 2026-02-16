@@ -3,10 +3,10 @@ const es = {
     { url: '/es', name: 'Inicio' },
     { url: '/es#about', name: 'Sobre Nosotros' },
     { url: '/es#values', name: 'Nuestros Valores' },
-    { url: '/es/cuentos', name: 'Cuentos de Hadas' },
+    //{ url: '/es/cuentos', name: 'Cuentos de Hadas' },//
     { url: '/es#reviews', name: 'Reseñas' },
     { url: '/es#faq', name: 'Preguntas Frecuentes' },
-    { url: '/es#contact', name: 'Contacto' },
+    { url: '/es#contact-form', name: 'Contacto' },
   ],
   brand: 'Le Mariage',
   hero: {
