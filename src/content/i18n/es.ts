@@ -147,8 +147,8 @@ const es = {
       photoAltPrefix: "Foto de",
       items: [
         {
-          author: "Anita Yang",
-          text: "André! No tendremos palabras para agradecerte todo lo que hiciste por nosotros! Tu, y todos los que fueron partícipes de esto (mi ayuda personalizada, decoración, video, fotografía… los que se me pueden quedar por fuera) hicieron posible un día maravilloso! Gracias x la buena energía, x la c a l m a, la tranquilidad, el cero afán que fue fundamental para nosotros. Gracias x la comprensión, por estar ahí en horarios nocturnos, por conectar con nosotros! No tengo dudas que escogí la mejor. Tqm ❤️❤️ a ti y a todos ❤️",
+          author: "Mara Villaverde",
+          text: "Highly recommend Tatiana and her team! She was incredibly patient throughout the entire process and has amazing local know-how, which made a huge difference in planning from abroad. As a foreigner, it was invaluable to have her as a reliable point person on the ground in Cartagena, coordinating details and solving issues before they even reached me. She is very resourceful, always coming back with options, ideas, and trusted vendors that fit our budget and vision. Super recommend her to any couple planning a destination wedding in Cartagena—you will be in excellent hands!",
           image: "/Imagenes Bodas/review/ana-review.webp",
           rating: 5,
           imagePosition: "1% 10%"
@@ -178,8 +178,8 @@ const es = {
           rating: 5
         },
         {
-          author: "Mara Villaverde",
-          text: "Highly recommend Tatiana and her team! She was incredibly patient throughout the entire process and has amazing local know-how, which made a huge difference in planning from abroad. As a foreigner, it was invaluable to have her as a reliable point person on the ground in Cartagena, coordinating details and solving issues before they even reached me. She is very resourceful, always coming back with options, ideas, and trusted vendors that fit our budget and vision. Super recommend her to any couple planning a destination wedding in Cartagena—you will be in excellent hands!",
+          author: "Mary Ochoa",
+          text: "¡André! ¡No tendremos palabras para agradecerte todo lo que hiciste por nosotros! Tú y todos los que participaron (mi ayuda personalizada, la decoración, el vídeo, la fotografía... aquellos que quizás omití) hicieron posible un día maravilloso. Gracias por la buena energía, por la calma, la tranquilidad, la cero ansiedad que fue fundamental para nosotros. ¡Gracias por tu comprensión, por estar ahí por la noche, por conectar con nosotros! Sin duda, elegí lo mejor. Gracias ❤️❤️ a ti y a todos ❤️",
           image: "/Imagenes Bodas/review/mara-review.webp",
           rating: 5
         },
