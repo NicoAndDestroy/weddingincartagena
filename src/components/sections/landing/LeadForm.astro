@@ -349,5 +349,63 @@ const { t } = Astro.props;
   background: rgba(255,255,255,.12);
 }
 
+/* ==================================================
+   LIGHT MODE SUPPORT
+================================================== */
+
+html:not(.dark) #contact-form h2 {
+  color: #1f2937;
+}
+
+html:not(.dark) #contact-form p {
+  color: #4b5563;
+}
+
+/* card */
+html:not(.dark) .form-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,.08);
+}
+
+/* glow border softer */
+html:not(.dark) .form-card::after {
+  opacity: .25;
+}
+
+/* inputs */
+html:not(.dark) #contact-form input,
+html:not(.dark) #contact-form textarea,
+html:not(.dark) #contact-form select {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.15);
+  color: #1f2937;
+}
+
+/* placeholders */
+html:not(.dark) #contact-form input::placeholder,
+html:not(.dark) #contact-form textarea::placeholder {
+  color: rgba(0,0,0,.45);
+}
+
+/* nav buttons */
+html:not(.dark) .next-btn,
+html:not(.dark) .back-btn {
+  background: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.1);
+  color: #1f2937;
+}
+
+html:not(.dark) .next-btn:hover,
+html:not(.dark) .back-btn:hover {
+  background: rgba(0,0,0,.08);
+}
+
+/* progress */
+html:not(.dark) .step-progress {
+  background: rgba(0,0,0,.08);
+}
+
+
 
 </style>
