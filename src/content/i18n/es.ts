@@ -148,7 +148,7 @@ const es = {
       items: [
         {
           author: "Mara Villaverde",
-          text: "Highly recommend Tatiana and her team! She was incredibly patient throughout the entire process and has amazing local know-how, which made a huge difference in planning from abroad. As a foreigner, it was invaluable to have her as a reliable point person on the ground in Cartagena, coordinating details and solving issues before they even reached me. She is very resourceful, always coming back with options, ideas, and trusted vendors that fit our budget and vision. Super recommend her to any couple planning a destination wedding in Cartagena—you will be in excellent hands!",
+          text: "¡Recomiendo ampliamente a Tatiana y a su equipo! Fue increíblemente paciente durante todo el proceso y posee un conocimiento local excepcional, lo que marcó una gran diferencia al planificar desde el extranjero. Como extranjera, fue invaluable tenerla como punto de contacto confiable en Cartagena, coordinando detalles y resolviendo problemas incluso antes de que me llegaran. Es muy ingeniosa y siempre nos trae opciones, ideas y proveedores de confianza que se ajustan a nuestro presupuesto y visión. La recomiendo ampliamente a cualquier pareja que planee una boda de destino en Cartagena; ¡estarán en excelentes manos!",
           image: "/Imagenes Bodas/review/ana-review.webp",
           rating: 5,
           imagePosition: "1% 10%"
