@@ -3,6 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
+import vercel from "@astrojs/vercel/static";
 
 
 
@@ -10,6 +11,11 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: "https://weddingincartagena.com",
   output: "static",
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   image: {
     domains: ["images.unsplash.com"],
   },
