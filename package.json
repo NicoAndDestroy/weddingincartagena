@@ -15,6 +15,7 @@
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/starlight": "^0.37.1",
     "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/vercel": "^9.0.5",
     "astro": "^5.16.6",
     "astro-compressor": "^0.4.1",
     "globby": "^14.0.1",
