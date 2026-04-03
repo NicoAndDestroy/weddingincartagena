@@ -3,6 +3,7 @@ import Meta from "@components/Meta.astro";
 import Navbar from "@components/sections/Navbar.astro";
 import FooterSection from "@components/sections/FooterSection.astro";
 import { SITE } from "@data/constants";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 interface Props {
   t?: any;
@@ -25,6 +26,7 @@ const {
   <head>
     <Meta meta={meta} structuredData={structuredData} />
     <title>{title}</title>
+    <SpeedInsights />
   </head>
 
   <body class="bg-[#f7f5f2] text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
