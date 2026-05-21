@@ -105,8 +105,7 @@ export default defineConfig({
     tag: "meta",
     attrs: {
       property: "og:image:alt",
-      content:
-        "Luxury wedding planning in Cartagena by Wedding in Cartagena.",
+      content: "Wedding in Cartagena logo with luxury wedding planning branding.",
     },
   },
   {
@@ -127,8 +126,7 @@ export default defineConfig({
     tag: "meta",
     attrs: {
       name: "twitter:image:alt",
-      content:
-        "Luxury wedding planning in Cartagena by Wedding in Cartagena.",
+      content: "Wedding in Cartagena logo with luxury wedding planning branding.",
     },
   },
 ],
