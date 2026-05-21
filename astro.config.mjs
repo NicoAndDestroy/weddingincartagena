@@ -18,14 +18,23 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      i18n: {
-        defaultLocale: "en",
-        locales: {
-          en: "en",
-          es: "es",
-        },
-      },
-    }),
+  i18n: {
+    defaultLocale: "en",
+    locales: {
+      en: "en",
+      es: "es",
+    },
+  },
+  filter: (page) => {
+    const pathname = new URL(page).pathname;
+
+    return (
+      !pathname.startsWith("/cuentos") &&
+      !pathname.startsWith("/es/cuentos") &&
+      !pathname.includes("first.chapter")
+    );
+  },
+}),
     starlight({
       title: "WeddinginCartagena",
       defaultLocale: "root",
