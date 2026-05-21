@@ -2,16 +2,11 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
-import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://weddingincartagena.com",
   output: "static",
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
 
   image: {
     domains: ["images.unsplash.com"],
