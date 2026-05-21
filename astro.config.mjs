@@ -94,21 +94,44 @@ export default defineConfig({
         },
       ],
       head: [
-        {
-          tag: "meta",
-          attrs: {
-            property: "og:image",
-            content: "https://screwfast.uk/social.webp",
-          },
-        },
-        {
-          tag: "meta",
-          attrs: {
-            property: "twitter:image",
-            content: "https://screwfast.uk/social.webp",
-          },
-        },
-      ],
+  {
+    tag: "meta",
+    attrs: {
+      property: "og:image",
+      content: "https://weddingincartagena.com/social.webp",
+    },
+  },
+  {
+    tag: "meta",
+    attrs: {
+      property: "og:image:alt",
+      content:
+        "Luxury wedding planning in Cartagena by Wedding in Cartagena.",
+    },
+  },
+  {
+    tag: "meta",
+    attrs: {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+  },
+  {
+    tag: "meta",
+    attrs: {
+      name: "twitter:image",
+      content: "https://weddingincartagena.com/social.webp",
+    },
+  },
+  {
+    tag: "meta",
+    attrs: {
+      name: "twitter:image:alt",
+      content:
+        "Luxury wedding planning in Cartagena by Wedding in Cartagena.",
+    },
+  },
+],
     }),
     compressor({
       gzip: false,
