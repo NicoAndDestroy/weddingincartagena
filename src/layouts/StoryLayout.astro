@@ -2,6 +2,7 @@
 import Meta from "@components/Meta.astro";
 import Navbar from "@components/sections/Navbar.astro";
 import FooterSection from "@components/sections/FooterSection.astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 import { SITE } from "@data/constants";
 
 interface Props {
@@ -94,5 +95,6 @@ const {
         }
       }
     </style>
+    <SpeedInsights />
   </body>
 </html>
