@@ -1,15 +1,18 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
-
-
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://weddingincartagena.com",
   output: "static",
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -19,7 +22,6 @@ export default defineConfig({
     host: true,
   },
   integrations: [
-    tailwind(),
     sitemap({
       i18n: {
         defaultLocale: "en",
@@ -42,46 +44,34 @@ export default defineConfig({
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
       sidebar: [
-  {
-    label: "Quick Start Guides",
-    translations: {
-      de: "Schnellstartanleitungen",
-      es: "Guías de Inicio Rápido",
-      fa: "راهنمای شروع سریع",
-      fr: "Guides de Démarrage Rapide",
-      ja: "クイックスタートガイド",
-      "zh-cn": "快速入门指南",
-    },
-    items: [
-      {
-        autogenerate: { directory: "guides" },
-      },
-    ],
-  },
-  {
-    label: "Tools & Equipment",
-    items: [
-      { label: "Tool Guides", link: "tools/tool-guides/" },
-      { label: "Equipment Care", link: "tools/equipment-care/" },
-    ],
-  },
-  {
-    label: "Construction Services",
-    items: [
-      {
-        autogenerate: { directory: "construction" },
-      },
-    ],
-  },
-  {
-    label: "Advanced Topics",
-    items: [
-      {
-        autogenerate: { directory: "advanced" },
-      },
-    ],
-  },
-],
+        {
+          label: "Quick Start Guides",
+          translations: {
+            de: "Schnellstartanleitungen",
+            es: "Guías de Inicio Rápido",
+            fa: "راهنمای شروع سریع",
+            fr: "Guides de Démarrage Rapide",
+            ja: "クイックスタートガイド",
+            "zh-cn": "快速入门指南",
+          },
+          items: [{ autogenerate: { directory: "guides" } }],
+        },
+        {
+          label: "Tools & Equipment",
+          items: [
+            { label: "Tool Guides", link: "tools/tool-guides/" },
+            { label: "Equipment Care", link: "tools/equipment-care/" },
+          ],
+        },
+        {
+          label: "Construction Services",
+          items: [{ autogenerate: { directory: "construction" } }],
+        },
+        {
+          label: "Advanced Topics",
+          items: [{ autogenerate: { directory: "advanced" } }],
+        },
+      ],
       social: [
         {
           icon: "github",
@@ -121,5 +111,4 @@ export default defineConfig({
       brotli: true,
     }),
   ],
-
 });
