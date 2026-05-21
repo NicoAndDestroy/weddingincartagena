@@ -6,6 +6,21 @@ import BrandLogo from "@components/BrandLogo.astro";
 // Get translation prop if passed
 const { t } = Astro.props;
 
+const footerSections = t?.footer?.links || t?.footerLinks || [
+  {
+    section: "Navigation",
+    links: [
+      { name: "Home", url: "/" },
+      { name: "Español", url: "/es/" },
+      { name: "About", url: "/about/" },
+      { name: "Contact", url: "/contact/" },
+    ],
+  },
+];
+
+const isExternalUrl = (url: string) => {
+  return url.startsWith("http://") || url.startsWith("https://");
+};
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">
@@ -13,60 +28,81 @@ const { t } = Astro.props;
     class="mx-auto w-full max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:pt-20 2xl:max-w-screen-2xl"
   >
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
-  <div class="col-span-full lg:col-span-1">
-    {/* Brand Logo */}
-    <BrandLogo class="h-auto w-52" />
-  </div>
-  {/* Footer Links - Render if available in translations */}
-  {(t?.footer?.links || t?.footerLinks) ? (
-    (t.footer?.links || t.footerLinks).map((section: any) => (
-      <div class="footer-section">
-        <h4 class="mb-2 text-lg font-semibold text-neutral-800 dark:text-neutral-100">{section.section}</h4>
-        <ul class="space-y-1">
-          {section.links.map((link: any) => (
-            <li>
-              <a href={link.url} target="_blank" rel="noopener noreferrer" class="text-neutral-600 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400 transition-colors duration-200">
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+      <div class="col-span-full lg:col-span-1">
+        <a href="/" aria-label="Wedding in Cartagena homepage">
+          <BrandLogo class="h-auto w-52" />
+        </a>
       </div>
-    ))
-  ) : (
-    // Fallback example links
-    <div>
-      <h4 class="mb-2 text-lg font-semibold text-neutral-800 dark:text-neutral-100">Links</h4>
-      <ul class="space-y-1">
-        <li><a href="/" class="text-neutral-600 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400 transition-colors duration-200">Home</a></li>
-        <li><a href="/about" class="text-neutral-600 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400 transition-colors duration-200">About</a></li>
-        <li><a href="/contact" class="text-neutral-600 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400 transition-colors duration-200">Contact</a></li>
-      </ul>
+
+      <nav class="contents" aria-label="Footer navigation">
+        {
+          footerSections.map((section: any) => (
+            <div class="footer-section">
+              <h4 class="mb-2 text-lg font-semibold text-neutral-800 dark:text-neutral-100">
+                {section.section}
+              </h4>
+
+              <ul class="space-y-1">
+                {
+                  section.links.map((link: any) => {
+                    const external = isExternalUrl(link.url);
+
+                    return (
+                      <li>
+                        <a
+                          href={link.url}
+                          target={external ? "_blank" : undefined}
+                          rel={external ? "noopener noreferrer" : undefined}
+                          class="text-neutral-600 transition-colors duration-200 hover:text-yellow-500 dark:text-neutral-400 dark:hover:text-yellow-400"
+                        >
+                          {link.name}
+                        </a>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+            </div>
+          ))
+        }
+      </nav>
     </div>
-  )}
-</div>
 
     <div
       class="mt-9 grid gap-y-2 sm:mt-12 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          {t?.footer?.copyright || '© '}<span id="current-year"></span> {t?.footer?.brand || 'Wedding in Cartagena by Le Mariage. All rights reserved.'}
+          {t?.footer?.copyright || "© "}
+          <span id="current-year"></span>
+          {" "}
+          {t?.footer?.brand || "Wedding in Cartagena by Le Mariage. All rights reserved."}
         </p>
       </div>
 
-      {/* Social Brands */}
-      <div>
+      <div class="flex items-center gap-3" aria-label="Social media links">
         <FooterSocialLink url="https://facebook.com/lemariagecartagena">
-          <img class="w-[26px]" src="/icons/facebook.svg" alt="Social Facebook Le Mariage" />
+          <img
+            class="w-[26px]"
+            src="/icons/facebook.svg"
+            alt="Facebook Le Mariage"
+          />
         </FooterSocialLink>
 
         <FooterSocialLink url="https://www.instagram.com/lemariagectg_weddingplanner/">
-          <img class="w-[26px]" src="/icons/instagram.svg" alt="Social Instagram Le Mariage" />
+          <img
+            class="w-[26px]"
+            src="/icons/instagram.svg"
+            alt="Instagram Le Mariage"
+          />
         </FooterSocialLink>
 
         <FooterSocialLink url="https://www.tiktok.com/@le.mariage.ctg?_t=8oY2o06BPwD&_r=1">
-          <img class="w-[26px]" src="/icons/tiktok.svg" alt="Social Tiktok Le Mariage" />
+          <img
+            class="w-[26px]"
+            src="/icons/tiktok.svg"
+            alt="TikTok Le Mariage"
+          />
         </FooterSocialLink>
       </div>
     </div>
@@ -74,7 +110,10 @@ const { t } = Astro.props;
     <script>
       const year = new Date().getFullYear();
       const element = document.getElementById("current-year");
-      element!.innerText = year.toString();
+
+      if (element) {
+        element.innerText = year.toString();
+      }
     </script>
   </div>
 </footer>

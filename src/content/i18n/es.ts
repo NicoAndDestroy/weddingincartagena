@@ -118,18 +118,21 @@ const es = {
         {
           section: "Contacto",
           links: [
-            { name: "contact@weddingincartagena.com", url: "mailto:lemariagecartagena@hotmail.com" },
-            { name: "+573004128389", url: "tel:+573004128389  " },
+            { name: "lemariagecartagena@hotmail.com", url: "mailto:lemariagecartagena@hotmail.com" },
+            { name: "+573004128389", url: "tel:+573004128389" },
             { name: "Cartagena, Colombia", url: "https://www.google.com/maps/place/Cartagena,+Cartagena+Province,+Bolivar/@10.4001987,-75.5085254,13z/data=!3m1!4b1!4m6!3m5!1s0x8ef625e7ae9d1351:0xb161392e033f26ca!8m2!3d10.3932277!4d-75.4832311!16zL20vMGg0NW4?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" }
           ]
         },
         {
           section: "Sitio",
           links: [
+            { name: "Inicio", url: "/es/" },
+            { name: "English Version", url: "/" },
             { name: "Sobre Nosotros", url: "/es#about" },
             { name: "Nuestros Valores", url: "/es#values" },
             { name: "Reseñas", url: "/es#reviews" },
-            { name: "Preguntas Frecuentes", url: "/es#faq" }
+            { name: "Preguntas Frecuentes", url: "/es#faq" },
+            { name: "Contacto", url: "/es#contact-form" }
           ]
         },
         {
