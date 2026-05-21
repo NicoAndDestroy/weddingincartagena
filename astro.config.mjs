@@ -42,34 +42,46 @@ export default defineConfig({
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
       sidebar: [
-        {
-          label: "Quick Start Guides",
-          translations: {
-            de: "Schnellstartanleitungen",
-            es: "Guías de Inicio Rápido",
-            fa: "راهنمای شروع سریع",
-            fr: "Guides de Démarrage Rapide",
-            ja: "クイックスタートガイド",
-            "zh-cn": "快速入门指南",
-          },
-          autogenerate: { directory: "guides" },
-        },
-        {
-          label: "Tools & Equipment",
-          items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
-          ],
-        },
-        {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
-        },
-        {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
-        },
-      ],
+  {
+    label: "Quick Start Guides",
+    translations: {
+      de: "Schnellstartanleitungen",
+      es: "Guías de Inicio Rápido",
+      fa: "راهنمای شروع سریع",
+      fr: "Guides de Démarrage Rapide",
+      ja: "クイックスタートガイド",
+      "zh-cn": "快速入门指南",
+    },
+    items: [
+      {
+        autogenerate: { directory: "guides" },
+      },
+    ],
+  },
+  {
+    label: "Tools & Equipment",
+    items: [
+      { label: "Tool Guides", link: "tools/tool-guides/" },
+      { label: "Equipment Care", link: "tools/equipment-care/" },
+    ],
+  },
+  {
+    label: "Construction Services",
+    items: [
+      {
+        autogenerate: { directory: "construction" },
+      },
+    ],
+  },
+  {
+    label: "Advanced Topics",
+    items: [
+      {
+        autogenerate: { directory: "advanced" },
+      },
+    ],
+  },
+],
       social: [
         {
           icon: "github",

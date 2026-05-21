@@ -10,13 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
-    "@astrojs/node": "^9.5.1",
-    "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/starlight": "^0.37.1",
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/node": "^10.1.1",
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/starlight": "^0.39.2",
     "@astrojs/tailwind": "^6.0.2",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^5.16.6",
+    "astro": "^6.3.6",
     "astro-compressor": "^0.4.1",
     "globby": "^14.0.1",
     "gsap": "^3.14.2",
