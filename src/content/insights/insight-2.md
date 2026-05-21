@@ -1,5 +1,6 @@
 ---
 title: "The Importance of Collaboration"
+slug: "insight-2"
 description: "Explore how collaboration is central to ScrewFast's construction approach, driving effective communication and teamwork to achieve outstanding outcomes."
 cardImage: "@/images/insights/insight-2.avif"
 cardImageAlt: "Top view mechanical tools arrangement"
