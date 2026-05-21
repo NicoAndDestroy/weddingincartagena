@@ -49,6 +49,7 @@ const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
       <WhatsappButton />
       <FooterSection t={t} />
     </div>
+        <SpeedInsights />
 
     <style>
       .scrollbar-hide::-webkit-scrollbar {
@@ -76,6 +77,5 @@ const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
         pointer-events: none;
       }
     </style>
-    <SpeedInsights />
   </body>
 </html>
