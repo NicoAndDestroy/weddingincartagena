@@ -7,10 +7,9 @@ import type { ImageMetadata } from "astro";
  * Safe even if files are deleted.
  */
 const imagesLand = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/images/values/land/*.jpg",
+  "/src/images/values/land/*.{jpg,jpeg,webp,png}",
   { eager: true },
 );
-
 /**
  * Normalize images
  */
@@ -25,7 +24,7 @@ const hasImages = imageArrayLand.length > 0;
 ---
 
 <!-- =======================
- Wedding Land Carousel
+ Wedding Land Carouselc
 ======================= -->
 <section id="wedding-slider-land" class="relative" aria-label={title}>
   <div class="swiper">
