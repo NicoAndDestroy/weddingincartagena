@@ -1,89 +1,96 @@
 ---
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
-const imagesVertical = import.meta.glob(
-  '/src/images/values/vertical/values_*.{jpg,webp}',
+const imagesVertical = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/values/vertical/values_*.{jpg,webp}",
   { eager: true }
 );
-// @ts-ignore
-const imageArrayVertical = Object.values(imagesVertical).map((image) => ({ ...image, mode: 'vertical' }));
+
+const imageArrayVertical = Object.values(imagesVertical).map((image) => ({
+  src: image.default,
+  mode: "vertical",
+}));
 
 const alt = "Bodas en Cartagena";
-
 ---
+
 <section class="my-20">
   <div id="wedding-slider-vert" class="relative">
-    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      {imageArrayVertical.map((image) => (
-        <div class="swiper-slide">
-          <Image class="w-full md:h-[700px] object-cover" src={image.default} alt={alt} />
-        </div>
-      ))}
+      {
+        imageArrayVertical.map((image) => (
+          <div class="swiper-slide">
+            <Image
+              class="w-full md:h-[700px] object-cover"
+              src={image.src}
+              alt={alt}
+            />
+          </div>
+        ))
+      }
     </div>
-    <!-- If we need pagination -->
+
     <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
     <button
       type="button"
       class="swiper-button-prev"
       aria-label="Previous slide"
-      aria-controls="wedding-slider-land"></button>
+      aria-controls="wedding-slider-vert"
+    ></button>
 
     <button
       type="button"
       class="swiper-button-next"
       aria-label="Next slide"
-      aria-controls="wedding-slider-land"></button>
-  </div>
+      aria-controls="wedding-slider-vert"
+    ></button>
 
-    <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
-
 </section>
-<!-- Slider main container -->
 
 <script>
-  // core version + navigation, pagination modules:
-  import Swiper from 'swiper';
-  import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-  // import Swiper and modules styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
-  import 'swiper/css/autoplay';
+  import Swiper from "swiper";
+  import { Navigation, Pagination, Autoplay, Scrollbar } from "swiper/modules";
 
-  const selector = document.getElementById('wedding-slider-vert');
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+  import "swiper/css/scrollbar";
 
-  // init Swiper:
-  // @ts-ignore
-  new Swiper(selector, {
-    // configure Swiper to use modules
-    modules: [Navigation, Pagination, Autoplay],
-    autoplay: {
-      delay: 5000,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 30
+  const selector = document.getElementById("wedding-slider-vert");
+
+  if (selector) {
+    new Swiper(selector, {
+      modules: [Navigation, Pagination, Autoplay, Scrollbar],
+
+      autoplay: {
+        delay: 5000,
       },
-      // when window width is >= 640px
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 40
-      }
-    },
-    loop: true,
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-    navigation: {
-      prevEl: ".swiper-button-prev",
-      nextEl: ".swiper-button-next",
-    }
-  });
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+
+      loop: true,
+
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+
+      navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+      },
+    });
+  }
 </script>
